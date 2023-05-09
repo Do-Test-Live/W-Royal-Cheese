@@ -173,8 +173,7 @@ include('include/header.php');
                 </div>
             </div>
 
-            <div class="col-xxl-3 mt-3">
-                <div class="coupon-cart">
+                <div class="coupon-cart" style="display: none;">
                     <h6 class="text-content mb-2">Coupon Apply</h6>
                     <div id="liveAlertPlaceholder"></div>
                     <div class="mb-3 coupon-box input-group">

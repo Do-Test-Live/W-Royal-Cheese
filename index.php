@@ -18,7 +18,7 @@ $db_handle = new DBController();
     <meta name="keywords" content="Wayshk">
     <meta name="author" content="Wayshk">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
-    <title>RCR Pets Workshop |職業治療服務及用品 | 香港</title>
+    <title>RCR Pets Workshop </title>
     <?php include('include/css.php'); ?>
     <style>
         header .header-top .about-list .right-nav-list .theme-form-select .dropdown-toggle.hkd::before {
@@ -61,20 +61,23 @@ include('include/header.php');
                 <div class="slider-animate">
                     <div>
                         <div class="home-contain rounded-0 p-0">
-                            <img src="assets/images/grocery/banner/1.jpg"
+                            <img src="assets/images/banner/67311_Websitebannermiddle.jpg"
                                  class="img-fluid bg-img blur-up lazyload" alt="">
                             <div class="home-detail home-big-space p-center-left home-overlay position-relative">
                                 <div class="container-fluid-lg">
                                     <div>
-                                        <h6 class="ls-expanded theme-color text-uppercase">Weekend Special offer
+                                        <?php
+                                        $banner_1 = $db_handle->runQuery("select * from banner where id = '2'");
+                                        ?>
+                                        <h6 class="ls-expanded theme-color text-uppercase"><?php echo $banner_1[0]['heading_one'];?>
                                         </h6>
-                                        <h1 class="heding-2">Premium Quality Dry Fruits</h1>
-                                        <h2 class="content-2">Dryfruits shopping made Easy</h2>
-                                        <h5 class="text-content">Fresh & Top Quality Dry Fruits are available here!
+                                        <h1 class="heding-2"><?php echo $banner_1[0]['heading_two'];?></h1>
+                                        <h2 class="content-2"><?php echo $banner_1[0]['heading_three'];?></h2>
+                                        <h5 class="text-content"><?php echo $banner_1[0]['details'];?>
                                         </h5>
                                         <button
                                                 class="btn theme-bg-color btn-md text-white fw-bold mt-md-4 mt-2 mend-auto"
-                                                onclick="location.href = 'shop-left-sidebar.html';">Shop Now <i
+                                                onclick="location.href = '<?php echo $banner_1[0]['link_one'];?>';">Shop Now <i
                                                     class="fa-solid fa-arrow-right icon"></i></button>
                                     </div>
                                 </div>
@@ -178,10 +181,7 @@ include('include/header.php');
                 <div class="title section-t-space">
                     <h2>
                         <?php
-                        if ($_SESSION['language'] === 'CN')
                             echo '你的日常必需品';
-                        else
-                            echo 'Your Daily Staples';
                         ?>
                     </h2>
                 </div>
@@ -219,7 +219,7 @@ include('include/header.php');
                                 <div class="product-detail">
                                     <a href="Product-Details?product_id=<?php echo $fetch_product [$i]['id']; ?>" target="_blank">
                                         <h6 class="name">
-                                            <?php if ($_SESSION['language'] === 'CN') echo $fetch_product [$i]['p_name']; else echo $fetch_product [$i]['p_name_en']; ?>
+                                            <?php echo $fetch_product [$i]['p_name'];?>
                                         </h6>
                                     </a>
 
@@ -252,11 +252,11 @@ include('include/header.php');
                                         $quantity = $fetch_quantity[0]['quantity'];
                                         if ($fetch_quantity_no > 0 && $quantity > 0) {
                                             ?>
-                                            <h6 class="theme-color"><?php if ($_SESSION['language'] === 'CN') echo '尚有存貨'; else echo 'In Stock'; ?></h6>
+                                            <h6 class="theme-color"><?php echo '尚有存貨'; ?></h6>
                                             <?php
                                         } else {
                                             ?>
-                                            <h6 class="theme-color"><?php if ($_SESSION['language'] === 'CN') echo '預購'; else echo 'Preorder'; ?></h6>
+                                            <h6 class="theme-color"><?php echo '預購'; ?></h6>
                                             <?php
                                         }
                                         ?>
@@ -264,7 +264,7 @@ include('include/header.php');
 
                                     <div class="add-to-cart-box bg-white">
                                         <a href="Product-Details?product_id=<?php echo $fetch_product [$i + 1]['id']; ?>" target="_blank">
-                                            <button class="btn btn-add-cart addcart-button"><?php if ($_SESSION['language'] === 'CN') echo '加入購物車'; else echo 'Add'; ?>
+                                            <button class="btn btn-add-cart addcart-button"><?php echo '加入購物車'; ?>
                                             </button>
                                         </a>
                                     </div>
@@ -299,7 +299,7 @@ include('include/header.php');
                                     <div class="product-detail">
                                         <a href="Product-Details?product_id=<?php echo $fetch_product [$i + 1]['id']; ?>" target="_blank">
                                             <h6 class="name">
-                                                <?php if ($_SESSION['language'] === 'CN') echo $fetch_product [$i + 1]['p_name']; else echo $fetch_product [$i + 1]['p_name_en']; ?>
+                                                <?php echo $fetch_product [$i + 1]['p_name']; ?>
                                             </h6>
                                         </a>
 
@@ -332,11 +332,11 @@ include('include/header.php');
                                             $quantity = $fetch_quantity[0]['quantity'];
                                             if ($fetch_quantity_no > 0 && $quantity > 0) {
                                                 ?>
-                                                <h6 class="theme-color"><?php if ($_SESSION['language'] === 'CN') echo '尚有存貨'; else echo 'In Stock'; ?></h6>
+                                                <h6 class="theme-color"><?php echo '尚有存貨'; ?></h6>
                                                 <?php
                                             } else {
                                                 ?>
-                                                <h6 class="theme-color"><?php if ($_SESSION['language'] === 'CN') echo '預購'; else echo 'Preorder'; ?></h6>
+                                                <h6 class="theme-color"><?php echo '預購'; ?></h6>
                                                 <?php
                                             }
                                             ?>
@@ -383,32 +383,6 @@ include('include/header.php');
                         </div>
                     </div>
 
-                    <!--<div class="section-t-space wow fadeIn">
-                        <div class="category-menu category-menu-2">
-                            <h3>Customer Comment</h3>
-
-                            <div class="review-box">
-                                <div class="review-contain">
-                                    <h5 class="w-75">We Care About Our Customer Experience</h5>
-                                    <p>In publishing and graphic design, Lorem ipsum is a
-                                        placeholder text commonly used to demonstrate the visual
-                                        form of a document or a typeface without relying on
-                                        meaningful content.</p>
-                                </div>
-
-                                <div class="review-profile">
-                                    <div class="review-image">
-                                        <img src="assets/images/vegetable/review/1.jpg"
-                                             class="img-fluid blur-up lazyload" alt="">
-                                    </div>
-                                    <div class="review-detail">
-                                        <h5>Tina Mcdonnale</h5>
-                                        <h6>Sale Manager</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
                 </div>
             </div>
         </div>
@@ -429,14 +403,14 @@ include('include/header.php');
                     <div class="home-detail p-center position-relative text-center">
                         <div>
                             <h3 class="text-danger text-uppercase fw-bold mb-0">
-                                <?php if ($_SESSION['language'] === 'CN') echo $banner_middle[0]['heading_one_cn']; else echo $banner_middle[0]['heading_one']; ?>
+                                <?php echo $banner_middle[0]['heading_one_cn'];?>
                             </h3>
                             <h2 class="theme-color text-pacifico fw-normal mb-0 super-sale text-center">
-                                <?php if ($_SESSION['language'] === 'CN') echo $banner_middle[0]['heading_two_cn']; else echo $banner_middle[0]['heading_two']; ?>
+                                <?php echo $banner_middle[0]['heading_two_cn']; ?>
                             </h2>
                             <h2 class="home-name text-uppercase"> <?php if ($_SESSION['language'] === 'CN') echo $banner_middle[0]['heading_three_cn']; else echo $banner_middle[0]['heading_three']; ?></h2>
                             <h3 class="text-pacifico fw-normal text-content text-center">
-                                <?php if ($_SESSION['language'] === 'CN') echo $banner_middle[0]['details_cn']; else echo $banner_middle[0]['details']; ?>
+                                <?php echo $banner_middle[0]['details_cn']; ?>
                             </h3>
                             <ul class="social-icon">
                                 <li>
@@ -477,10 +451,7 @@ include('include/header.php');
                             <div class="top-selling-title">
                                 <h3>
                                     <?php
-                                    if ($_SESSION['language'] === 'CN')
                                         echo '最暢銷';
-                                    else
-                                        echo 'Top Selling';
                                     ?>
                                 </h3>
                             </div>
@@ -501,7 +472,7 @@ include('include/header.php');
 
                                     <div class="top-selling-detail">
                                         <a href="Product-Details?product_id=<?php echo $fetch_product [$i]['id']; ?>" target="_blank">
-                                            <h5><?php if ($_SESSION['language'] === 'CN') echo $fetch_product [$i]['p_name']; else echo $fetch_product [$i]['p_name_en']; ?></h5>
+                                            <h5><?php echo $fetch_product [$i]['p_name'];?></h5>
                                         </a>
                                         <!--<div class="product-rating">
                                             <ul class="rating">
@@ -541,10 +512,7 @@ include('include/header.php');
                             <div class="top-selling-title">
                                 <h3>
                                     <?php
-                                    if ($_SESSION['language'] === 'CN')
                                         echo '熱門產品';
-                                    else
-                                        echo 'Trending Products';
                                     ?>
                                 </h3>
                             </div>
@@ -565,7 +533,7 @@ include('include/header.php');
 
                                     <div class="top-selling-detail">
                                         <a href="Product-Details?product_id=<?php echo $product [$i]['id']; ?>">
-                                            <h5><?php if ($_SESSION['language'] === 'CN') echo $product [$i]['p_name']; else echo $product [$i]['p_name_en']; ?></h5>
+                                            <h5><?php echo $product [$i]['p_name']; ?></h5>
                                         </a>
                                         <!--<div class="product-rating">
                                             <ul class="rating">
@@ -605,10 +573,7 @@ include('include/header.php');
                             <div class="top-selling-title">
                                 <h3>
                                     <?php
-                                    if ($_SESSION['language'] === 'CN')
                                         echo '最新產品';
-                                    else
-                                        echo 'Recently Added';
                                     ?>
                                 </h3>
                             </div>
@@ -630,7 +595,7 @@ include('include/header.php');
 
                                     <div class="top-selling-detail">
                                         <a href="Product-Details?product_id=<?php echo $fetch_product3 [$i]['id']; ?>">
-                                            <h5><?php if ($_SESSION['language'] === 'CN') echo $fetch_product3 [$i]['p_name']; else echo $fetch_product3 [$i]['p_name_en']; ?></h5>
+                                            <h5><?php echo $fetch_product3 [$i]['p_name'];?></h5>
                                         </a>
                                         <!--<div class="product-rating">
                                             <ul class="rating">
@@ -662,61 +627,6 @@ include('include/header.php');
                     </div>
                 </div>
             </div>
-
-            <!--<div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="top-selling-box">
-                            <div class="top-selling-title">
-                                <h3>
-                                    <?php
-            /*                                    if($_SESSION['language'] === 'CN')
-                                                    echo '最高評價';
-                                                else
-                                                    echo 'Top Rated';
-                                                */ ?>
-                                    </h3>
-                            </div>
-
-                            <?php
-            /*                            $fetch_product2 = $db_handle->runQuery("select * from product WHERE status= '1' order by rand() limit 3");
-                                        $row = $db_handle->numRows("select * from product WHERE status= '1' order by rand() limit 3");
-                                        for ($i = 0; $i < $row; $i++) {
-                                            */ ?>
-                                <div class="top-selling-contain wow fadeInUp">
-                                    <a href="#" class="top-selling-image">
-                                        <img src="admin/<?php
-            /*                                        echo str_replace("650", "250", strtok($fetch_product2 [$i]['p_image'],','));
-                                                    */ ?>"
-                                             class="img-fluid blur-up lazyload"
-                                             alt="">
-                                    </a>
-
-                                    <div class="top-selling-detail">
-                                        <a href="#">
-                                            <h5><?php /*if($_SESSION['language'] === 'CN') echo $fetch_product2 [$i]['p_name']; else echo $fetch_product2 [$i]['p_name_en'];*/ ?></h5>
-                                        </a>
-                                        <!--<div class="product-rating">
-                                            <ul class="rating">
-                                                <li>
-                                                    <i data-feather="star" class="fill"></i>
-                                                </li>
-                                                <li>
-                                                    <i data-feather="star" class="fill"></i>
-                                                </li>
-                                                <li>
-                                                    <i data-feather="star" class="fill"></i>
-                                                </li>
-                                                <li>
-                                                    <i data-feather="star" class="fill"></i>
-                                                </li>
-                                                <li>
-                                                    <i data-feather="star"></i>
-                                                </li>
-                                            </ul>
-                                            <span>(34)</span>
-                                        </div>-->
-            <h6><?php /*echo $fetch_product2[$i]['product_price']; */ ?></h6>
         </div>
     </div>
     <?php

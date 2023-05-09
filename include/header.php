@@ -114,48 +114,6 @@ if (isset($_SESSION["cart_item"])) {
                 <div class="col-lg-3">
                     <ul class="about-list right-nav-about">
                         <li class="right-nav-list">
-                            <div class="dropdown theme-form-select">
-                                <?php
-                                if ($_SESSION['language'] === 'CN') {
-                                    ?>
-                                    <button class="btn dropdown-toggle" type="button" id="select-language"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="assets/images/country/hk-flag.png"
-                                             class="img-fluid blur-up lazyload" alt="">
-                                        <span>Hong Kong</span>
-                                    </button>
-                                    <?php
-                                } else {
-                                    ?>
-                                    <button class="btn dropdown-toggle" type="button" id="select-language"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="assets/images/country/united-kingdom.png"
-                                             class="img-fluid blur-up lazyload" alt="">
-                                        <span>English</span>
-                                    </button>
-                                    <?php
-                                }
-                                ?>
-
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="select-language">
-                                    <li>
-                                        <a class="dropdown-item" href="language.php?language=EN" id="english">
-                                            <img src="assets/images/country/united-kingdom.png"
-                                                 class="img-fluid blur-up lazyload" alt="">
-                                            <span>English</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="language.php?language=CN" id="france">
-                                            <img src="assets/images/country/hk-flag.png"
-                                                 class="img-fluid blur-up lazyload" alt="">
-                                            <span>Hong Kong</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="right-nav-list">
                             <div class="theme-form-select">
                                 <button class="btn dropdown-toggle hkd" type="button" id="select-dollar"
                                         data-bs-toggle="dropdown" aria-expanded="false">
