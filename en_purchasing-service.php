@@ -12,11 +12,11 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
-    <title>產品代購服務 | Wayshk</title>
+    <title>產品代購服務 | Royal Cheese</title>
 
     <?php include ('include/css.php');?>
     <style>
@@ -123,8 +123,8 @@ include ('include/header.php');
                 <p>1. Pay in cash at the pick-up points</p>
                 <p>2. PayMe/FPS</p>
                 <p>3. Mailing cheque
-                    - Cheque payable to：WAYSHK)
-                    - Mail to: Room 1, 3/F, Kingslet Industrial Building, 21-23 Shing Wan Road, Tai Wai  [Attn: WAYSHK].
+                    - Cheque payable to：Royal Cheese)
+                    - Mail to: Room 1, 3/F, Kingslet Industrial Building, 21-23 Shing Wan Road, Tai Wai  [Attn: Royal Cheese].
                 </p>
                 <p>4. Bank transfer
                     - Hang Seng Bank: 769-334699-883, account name: WASYHK)

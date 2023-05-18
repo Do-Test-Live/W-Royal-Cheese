@@ -13,9 +13,9 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
     <title>Forgot Password</title>
 
@@ -93,7 +93,7 @@ $db_handle = new DBController();
                     <div class="d-flex align-items-center justify-content-center h-100">
                         <div class="log-in-box">
                             <div class="log-in-title">
-                                <h3><?php if($_SESSION['language'] === 'CN') echo '歡迎來到 WAYSHK'; else echo 'Welcome To WAYSHK';?></h3>
+                                <h3><?php if($_SESSION['language'] === 'CN') echo '歡迎來到 Royal Cheese'; else echo 'Welcome To Royal Cheese';?></h3>
                                 <h4><?php if($_SESSION['language'] === 'CN') echo '忘記密碼了嗎'; else echo 'Forgot your password';?></h4>
                             </div>
 

@@ -12,11 +12,11 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
-    <title>產品代購服務 | Wayshk</title>
+    <title>產品代購服務 | Royal Cheese</title>
 
     <?php include ('include/css.php');?>
     <style>
@@ -84,7 +84,7 @@ include ('include/header.php');
                 </div>
                 <div class="col-md-6 px-sm-0 px-md-5">
                     <p style="font-weight: bold;">請填妥產品訂購表格後</p>
-                    <p>1.  電郵到wayshk.order@gmail.com</p>
+                    <p>1.  電郵到Royal Cheese.order@gmail.com</p>
                     <p>2.  以 Whatsapp 傳送給 +852 5605 8389</p>
                     <p>我們將盡快為貴機構/貴校報價</p>
                 </div>
@@ -119,8 +119,8 @@ include ('include/header.php');
                 <h2 class="mb-3">付款方式：</h2>
                 <p>1. 自取點取貨時以現金付款</p>
                 <p>2. PayMe/轉數快</p>
-                <p>3. 郵寄支票 （支票抬頭：WAYSHK）</p>
-                <p style="padding-left: 10px;">寄往：大圍成運路21-23號群力工業大廈3樓1室【Attn：WAYSHK】</p>
+                <p>3. 郵寄支票 （支票抬頭：Royal Cheese）</p>
+                <p style="padding-left: 10px;">寄往：大圍成運路21-23號群力工業大廈3樓1室【Attn：Royal Cheese】</p>
                 <p>4. 銀行過數 (恆生銀行：769-334699-883 戶口名稱：WASYHK) </p>
                 <p>5. 可於貨到後30日內支付費用</p>
             </div>

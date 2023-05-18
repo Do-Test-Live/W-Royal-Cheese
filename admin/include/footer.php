@@ -3,7 +3,7 @@
        ***********************************-->
 <div class="footer">
     <div class="copyright">
-        <p>Copyright © Wayshk Admin</p>
+        <p>Copyright © Royal Cheese Admin</p>
     </div>
 </div>
 <!--**********************************

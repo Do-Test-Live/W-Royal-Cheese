@@ -13,11 +13,11 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
-    <title>治療用品 | Wayshk | 九龍</title>
+    <title>治療用品 | Royal Cheese | 九龍</title>
 
     <?php include ('include/css.php');?>
     <style>
@@ -79,7 +79,7 @@ $db_handle = new DBController();
                                         <div class="delivery-box">
                                             <div class="delivery-detail">
                                                 <h5 class="text">
-                                                    Wayshk活籽兒童用品店以小店形式經營，職業治療師運用專業角度，在全球各地精心搜羅有訓練價值的兒童用品及玩具，方便顧客一站式選購。我們亦有售許多自家設計的創意教材，讓孩子在有趣的遊戲中學習和快樂成長。
+                                                    Royal Cheese活籽兒童用品店以小店形式經營，職業治療師運用專業角度，在全球各地精心搜羅有訓練價值的兒童用品及玩具，方便顧客一站式選購。我們亦有售許多自家設計的創意教材，讓孩子在有趣的遊戲中學習和快樂成長。
                                                 </h5>
                                             </div>
                                             <div class="delivery-detail">

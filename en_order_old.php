@@ -13,11 +13,11 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
-    <title>Order Method | Wayshk</title>
+    <title>Order Method | Royal Cheese</title>
 
     <?php include('include/css.php'); ?>
     <style>
@@ -154,8 +154,8 @@ include('include/header.php');
                                 *** Items with the label "coming soon" or shown as out of stock are pre-ordered products, and the arrival date is uncertain.
                                 Will wait for the goods in the order to be complete before shipping. Welcome to ask us for details.<br/>
 
-                                *** The color and style of the product will be distributed randomly; but Wayshk understands children's obsession with color,
-                                If you have any special requirements, you can fill in the new description. Wayshk will try to cooperate as much as possible.
+                                *** The color and style of the product will be distributed randomly; but Royal Cheese understands children's obsession with color,
+                                If you have any special requirements, you can fill in the new description. Royal Cheese will try to cooperate as much as possible.
                             </p>
                         </div>
                     </div>
@@ -213,7 +213,7 @@ include('include/header.php');
 
                         <div class="delivery-list">
                             <p class="text-content">
-                                By submitting and/or confirming the order, it means that you understand and accept the shopping terms and conditions of Wayshk (hereinafter referred to as the store). The methods of submission and confirmation are not limited to online shopping platforms, but also include submission and confirmation by telephone, email or in person at the consignment store. orders.
+                                By submitting and/or confirming the order, it means that you understand and accept the shopping terms and conditions of Royal Cheese (hereinafter referred to as the store). The methods of submission and confirmation are not limited to online shopping platforms, but also include submission and confirmation by telephone, email or in person at the consignment store. orders.
                                 <br/>
                                 1. All items are subject to availability. If any items are sold out, the store will not give prior notice. The store also reserves the right to refuse and/or limit the quantity of orders without giving any explanation. In the event of the above, our store will notify you by phone or email.
                                 <br/>
@@ -233,7 +233,7 @@ include('include/header.php');
                                 <br/>
                                 3. Coupon codes, discounts, and gifts are only applicable to designated customers or promotions. If there is a wrong use, whether it is caused by human error or system failure, our store will automatically correct it and notify you by phone or email for confirmation. If the customer does not enter the coupon code prior to submitting the order, it will be deemed to have forfeited the offer to use the coupon.
                                 <br/>
-                                4. Please consult the store staff about the usage of the product before purchasing. The store will not be responsible for any problems caused by wrong or improper use of the product; the store reserves the right to modify and revise the price, delivery charges and online shopping terms and conditions from time to time rights without prior notice; in case of any dispute, Wayshk reserves the right of final decision.
+                                4. Please consult the store staff about the usage of the product before purchasing. The store will not be responsible for any problems caused by wrong or improper use of the product; the store reserves the right to modify and revise the price, delivery charges and online shopping terms and conditions from time to time rights without prior notice; in case of any dispute, Royal Cheese reserves the right of final decision.
                             </p>
                         </div>
                     </div>

@@ -15,11 +15,11 @@ $product_id = $_GET['product_id'];
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
-    <title>Wayshk |職業治療服務及用品 | 香港</title>
+    <title>Royal Cheese |職業治療服務及用品 | 香港</title>
     <?php include('include/css.php'); ?>
     <style>
         header .header-top .about-list .right-nav-list .theme-form-select .dropdown-toggle.hkd::before {
@@ -185,27 +185,6 @@ include('include/header.php');
                                 </p>
                             </div>
 
-
-                            <div class="note-box product-packege">
-                                <form method="post" action="Product-Details?action=add&product_id=<?php echo $_GET['product_id']; ?>">
-                                    <div class="cart_qty qty-box product-qty">
-                                        <div class="input-group">
-                                            <button type="button" class="qty-left-minus" data-type="minus"
-                                                    data-field="">
-                                                <i class="fa fa-minus" aria-hidden="true"></i>
-                                            </button>
-                                            <input class="form-control input-number qty-input" type="text"
-                                                   name="quantity" min="1" value="1">
-                                            <button type="button" class="qty-right-plus" data-type="plus" data-field="">
-                                                <i class="fa fa-plus" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <button class="btn btn-md bg-dark cart-button text-white w-100 mt-3" type="submit"><?php if($_SESSION['language'] === 'CN') echo '加入購物車'; else echo 'Add';?>
-                                    </button>
-                                </form>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -344,7 +323,7 @@ include('include/header.php');
 
                                     <div class="add-to-cart-box bg-white">
                                         <a href="#">
-                                            <button class="btn btn-add-cart addcart-button"><?php if($_SESSION['language'] === 'CN') echo '加入購物車'; else echo 'Add';?>
+                                            <button class="btn btn-add-cart addcart-button"><?php if($_SESSION['language'] === 'CN') echo '查看詳情'; else echo 'Add';?>
                                             </button>
                                         </a>
                                     </div>

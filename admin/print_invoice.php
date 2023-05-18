@@ -607,9 +607,9 @@ $billing_details = $db_handle->runQuery("SELECT * FROM `billing_details` WHERE i
                 <div class="cs-invoice_right cs-text_right">
                     <b class="cs-primary_color">支付給:</b>
                     <p>
-                        Wayshk 活籽兒童用品店 <br>
+                        Royal Cheese 活籽兒童用品店 <br>
                         大圍成運路 21-23 號群力工業大廈 3 樓 1 室 <br>
-                        電話：5605 8389 / 電郵： wayshk.order@gmail.com
+                        電話：5605 8389 / 電郵： Royal Cheese.order@gmail.com
                     </p>
                 </div>
             </div>
@@ -700,10 +700,10 @@ $billing_details = $db_handle->runQuery("SELECT * FROM `billing_details` WHERE i
                 </div>
                 <div class="cs-note_right">
                     <p class="cs-mb0"><b class="cs-primary_color cs-bold">付款方法:</b></p>
-                    <p class="cs-m0">1) 郵寄支票 ：支票抬頭請書明受款人為「 Wayshk」，信封請註明 Attn: Wayshk
+                    <p class="cs-m0">1) 郵寄支票 ：支票抬頭請書明受款人為「 Royal Cheese」，信封請註明 Attn: Royal Cheese
                         並郵寄往大圍成運路 21-23 號群力工業大廈 3 樓 1 室</p>
                     <p class="cs-m0">2) 直接存款 ：銀行戶口號碼為 769-334699-883 （恆生銀行）
-                        銀行戶口名稱: Wayshk</p>
+                        銀行戶口名稱: Royal Cheese</p>
                 </div>
             </div>
         </div>

@@ -19,9 +19,9 @@ if (!isset($_SESSION["cart_item"])) {
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
     <title>Checkout</title>
 
@@ -290,7 +290,7 @@ include('include/header.php');
                                                                 <label class="form-check-label" for="Bank"><input
                                                                             class="form-check-input mt-0" type="radio"
                                                                             name="payment" value="Bank Deposit" id="Bank">
-                                                                    <?php if($_SESSION['language'] === 'CN') echo '銀行入數戶口號碼為 769-334699-883 (恆生銀行) 戶口名稱: Wayshk'; else echo 'Bank deposit Account number : 769-334699-883 (Hang Seng Bank) Account name : Wayshk';?></label>
+                                                                    <?php if($_SESSION['language'] === 'CN') echo '銀行入數戶口號碼為 769-334699-883 (恆生銀行) 戶口名稱: Royal Cheese'; else echo 'Bank deposit Account number : 769-334699-883 (Hang Seng Bank) Account name : Royal Cheese';?></label>
                                                             </div>
                                                         </div>
                                                     </div>

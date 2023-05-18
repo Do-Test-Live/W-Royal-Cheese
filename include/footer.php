@@ -82,7 +82,7 @@
                                                 <i data-feather="mail"></i>
                                                 <div class="contact-number">
                                                     <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo '電郵地址'; else echo 'Email Address :';?></h6>
-                                                    <a href="mailto:ways00.hk@gmail.com">wayshk.order@gmail.com</a>
+                                                    <a href="mailto:ways00.hk@gmail.com">Royal Cheese.order@gmail.com</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -115,7 +115,7 @@
                                                 <i data-feather="mail"></i>
                                                 <div class="contact-number">
                                                     <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo '電郵地址'; else echo 'Email Address :';?></h6>
-                                                    <a href="mailto:ways00.hk@gmail.com">wayshk.order@gmail.com</a>
+                                                    <a href="mailto:ways00.hk@gmail.com">Royal Cheese.order@gmail.com</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -180,7 +180,7 @@
                                     <a href="Institution-EN" class="text-content">Institution/School Order</a>
                                 </li>
                                 <li>
-                                    <a href="Living-Seeds-Children-EN" class="text-content">Wayshk Children Service Society</a>
+                                    <a href="Living-Seeds-Children-EN" class="text-content">Royal Cheese Children Service Society</a>
                                 </li>
                                 <li>
                                     <a href="Occupational-Therapy-Courses-EN" class="text-content">Featured Courses</a>
@@ -248,7 +248,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="reserve">
-                        <h6 class="text-content">©2023 Wayshk All rights reserved</h6>
+                        <h6 class="text-content">©2023 Royal Cheese All rights reserved</h6>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -261,7 +261,7 @@
                         <h6 class="text-content">Stay connected :</h6>
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/wayshk000?mibextid=LQQJ4d" target="_blank">
+                                <a href="https://www.facebook.com/Royal Cheese000?mibextid=LQQJ4d" target="_blank">
                                     <i class="fa-brands fa-2x fa-facebook-f"></i>
                                 </a>
                             </li>

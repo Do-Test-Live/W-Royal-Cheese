@@ -94,10 +94,10 @@ if (isset($_POST["placeOrder"])) {
 
     if ($payment != 'Credit Card') {
         $email_to = $email;
-        $subject = 'Wayshk';
+        $subject = 'Royal Cheese';
 
 
-        $headers = "From: Wayshk <" . $db_handle->from_email() . ">\r\n";
+        $headers = "From: Royal Cheese <" . $db_handle->from_email() . ">\r\n";
         $headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
         $messege = "
@@ -106,7 +106,7 @@ if (isset($_POST["placeOrder"])) {
                 <div style='min-width: 200px; background-color: #ffffff; padding: 20px; margin: auto;'>
                     <h3 style='color:black'>Order Placed Successfully</h3>
                     <p style='color:black;'>
-                    Your order is successfully placed. We will inform you about the delivery status soon. Please download the copy of your invoice from: <a href = 'https://wayshk.ngt.hk/admin/print_invoice.php?id=$id' target='_blank'>Here</a>
+                    Your order is successfully placed. We will inform you about the delivery status soon. Please download the copy of your invoice from: <a href = 'https://Royal Cheese.ngt.hk/admin/print_invoice.php?id=$id' target='_blank'>Here</a>
                     </p>
                 </div>
                 </body>
@@ -114,10 +114,10 @@ if (isset($_POST["placeOrder"])) {
         if (mail($email_to, $subject, $messege, $headers)) {
 
             $email_to = $db_handle->notify_email();
-            $subject = 'Wayshk';
+            $subject = 'Royal Cheese';
 
 
-            $headers = "From: Wayshk <" . $db_handle->from_email() . ">\r\n";
+            $headers = "From: Royal Cheese <" . $db_handle->from_email() . ">\r\n";
             $headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
             $messege = "

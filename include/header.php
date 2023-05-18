@@ -84,12 +84,12 @@ if (isset($_SESSION["cart_item"])) {
                                         if ($_SESSION['language'] === 'CN') {
                                             ?>
                                             <strong class="me-1">
-                                                歡迎來到Wayshk!
+                                                歡迎來到Royal Cheese!
                                             </strong>
                                             <?php
                                         } else {
                                             ?>
-                                            <strong class="me-1">Welcome to WaysHK!</strong>
+                                            <strong class="me-1">Welcome to Royal Cheese!</strong>
                                             <?php
                                         }
                                         ?>
@@ -185,16 +185,6 @@ if (isset($_SESSION["cart_item"])) {
                                                 <i data-feather="phone-call"></i></a>
                                         </div>
                                     </a>
-                                </li>
-                                <li class="right-side">
-                                    <div class="onhover-dropdown header-badge">
-                                        <a href="Cart" class="btn p-0 position-relative header-wishlist">
-                                            <i data-feather="shopping-cart"></i>
-                                            <span class="position-absolute top-0 start-100 translate-middle badge"><?php echo $total_quantity; ?>
-                                                    <span class="visually-hidden">unread messages</span>
-                                                </span>
-                                        </a>
-                                    </div>
                                 </li>
                                 <li class="right-side onhover-dropdown">
                                     <div class="delivery-login-box">
@@ -435,7 +425,7 @@ if (isset($_SESSION["cart_item"])) {
                                                             Order</a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="Living-Seeds-Children-EN">Wayshk
+                                                        <a class="dropdown-item" href="Living-Seeds-Children-EN">Royal Cheese
                                                             Children Service Society</a>
                                                     </li>
                                                     <li>
@@ -496,11 +486,6 @@ if (isset($_SESSION["cart_item"])) {
         <li>
             <a href="#" class="search-box">
                 <i class="fa-solid fa-magnifying-glass text-white" style="font-size: 18px"></i>
-            </a>
-        </li>
-        <li>
-            <a href="Cart">
-                <i class="fa-solid fa-cart-shopping text-white" style="font-size: 18px"></i>
             </a>
         </li>
     </ul>

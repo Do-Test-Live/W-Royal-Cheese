@@ -14,9 +14,9 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
     <title>RCR Pets Workshop </title>
     <?php include('include/css.php'); ?>
@@ -264,7 +264,7 @@ include('include/header.php');
 
                                     <div class="add-to-cart-box bg-white">
                                         <a href="Product-Details?product_id=<?php echo $fetch_product [$i + 1]['id']; ?>" target="_blank">
-                                            <button class="btn btn-add-cart addcart-button"><?php echo '加入購物車'; ?>
+                                            <button class="btn btn-add-cart addcart-button"><?php echo '查看詳情'; ?>
                                             </button>
                                         </a>
                                     </div>
@@ -344,7 +344,7 @@ include('include/header.php');
 
                                         <div class="add-to-cart-box bg-white">
                                             <a href="Product-Details?product_id=<?php echo $fetch_product [$i + 1]['id']; ?>" target="_blank">
-                                                <button class="btn btn-add-cart"><?php if ($_SESSION['language'] === 'CN') echo '加入購物車'; else echo 'Add'; ?>
+                                                <button class="btn btn-add-cart"><?php if ($_SESSION['language'] === 'CN') echo '查看詳情'; else echo 'Add'; ?>
                                                 </button>
                                             </a>
                                         </div>
@@ -420,7 +420,7 @@ include('include/header.php');
                                 </li>
 
                                 <li>
-                                    <a href="https://www.facebook.com/wayshk000?mibextid=LQQJ4d">
+                                    <a href="https://www.facebook.com/Royal Cheese000?mibextid=LQQJ4d">
                                         <i class="fa-brands fa-facebook-f"></i>
                                     </a>
                                 </li>

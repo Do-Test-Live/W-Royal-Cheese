@@ -10,9 +10,9 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
     <title>User Profile</title>
 
@@ -58,7 +58,7 @@ include('include/header.php');
         <div class="row">
             <div class="col-12">
                 <div class="breadscrumb-contain">
-                    <h2 class="mb-2">WAYSHK Online Shop Membership Program</h2>
+                    <h2 class="mb-2">Royal Cheese Online Shop Membership Program</h2>
                     <nav>
                         <ol class="breadcrumb mb-0">
                             <li class="breadcrumb-item">
@@ -91,14 +91,14 @@ include('include/header.php');
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
                                         style="font-weight: bold;">
-                                    1. How do I join the Wayshk Membership Program? <i
+                                    1. How do I join the Royal Cheese Membership Program? <i
                                             class="fa-solid fa-angle-down"></i>
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                  aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Go to the "Wayshk Online Shop Membership Program" page on the official homepage,
+                                    <p>Go to the "Royal Cheese Online Shop Membership Program" page on the official homepage,
                                         then click "Register Member" to create a membership account with your phone
                                         number and receive 200 points upon successful registration. (Only for those who
                                         are 18 years old or above)</p>
@@ -120,14 +120,14 @@ include('include/header.php');
                                     <p>Each time you make a purchase, log in to your member account first. Each time you
                                         submit a successful payment, the points will be automatically credited and
                                         recorded in your spending account.</p>
-                                    <p>Wayshk Online Shop members can earn points through the following ways:</p>
+                                    <p>Royal Cheese Online Shop members can earn points through the following ways:</p>
                                     <p>(i) Registered Member - Register as a member of the online store and earn 200
                                         points.</p>
                                     <p>(ii) Online Shop Spending - Earn 1 point for every $1 you spend on orders/classes
                                         in the Online Shop. Points will be rounded down to the nearest single digit,
                                         e.g. if the net purchase is HK$99.5 after the discount, the customer will earn
                                         99 points</p>
-                                    <p>(iii) Referral Reward - Invite a friend to become Wayshk Online Shop member, and
+                                    <p>(iii) Referral Reward - Invite a friend to become Royal Cheese Online Shop member, and
                                         the referrer will earn 200 points (unlimited number of times) after your
                                         friend's first purchase in the Online Shop.</p>
                                     <p>(iv) Trial Evaluation Rebate - After purchasing a product / taking a course,
@@ -137,7 +137,7 @@ include('include/header.php');
                                     <p>* Member points can only be earned after the member has logged in and paid.</p>
                                     <p>*Points cannot be earned on selected products including gift packs/special
                                         offers.</p>
-                                    <p>*Membership program is only applicable to Wayshk online store, orders placed
+                                    <p>*Membership program is only applicable to Royal Cheese online store, orders placed
                                         offline by other means are not eligible for the points program</p>
                                     <p>*After the points are issued, you can check the "Member Points" record page by
                                         yourself, we will not check the points on your behalf.</p>
@@ -157,7 +157,7 @@ include('include/header.php');
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                  data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Enter Wayshk online store and login to your member account:</p>
+                                    <p>Enter Royal Cheese online store and login to your member account:</p>
                                     <p>(i) Accumulated points in the member account can be redeemed and downloaded for
                                         designated training materials</p>
                                     <p>(ii) Cash rebate - every 40 points can be used as $1 (minimum rebate amount is
@@ -217,7 +217,7 @@ include('include/header.php');
                                 <div class="accordion-body">
                                     <p>If you forget your password, click "Login" on the top of the screen, and then
                                         click "Forget Password". You can enter your registered email address and click
-                                        the "Send" button below. Wayshk will send the reset password link to your
+                                        the "Send" button below. Royal Cheese will send the reset password link to your
                                         registered email address.</p>
                                 </div>
                             </div>
@@ -235,8 +235,8 @@ include('include/header.php');
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                                  data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>If a member wishes to cancel their Wayshk membership, please email
-                                        ways00.hk@gmail.com to apply. Once the information is confirmed, Wayshk will
+                                    <p>If a member wishes to cancel their Royal Cheese membership, please email
+                                        ways00.hk@gmail.com to apply. Once the information is confirmed, Royal Cheese will
                                         make arrangements within 30 working days and all unredeemed points and other
                                         benefits will be cancelled.</p>
                                 </div>
@@ -249,17 +249,17 @@ include('include/header.php');
         <div class="row mt-5">
             <div class="col-12">
                 <h1 class="mt-3 mb-3 inner-header">Terms and Conditions</h1>
-                <h2 class="mb-3" style="font-weight: bold;">Wayshk O Membership Program</h2>
-                <p>1. Each applicant can only apply for one Wayshk Online Shop membership.</p>
-                <p>2. The application fee for Wayshk Online Shop Membership is free of charge.</p>
-                <p>3. The Wayshk Membership Program is only available on the website.</p>
-                <p>4. Wayshk online store membership and points can only be used by the member himself/herself and cannot be transferred to others.</p>
-                <p>5. All membership information, points and rewards redemption records shall be based on the records kept by Wayshk.</p>
-                <p>6. If a member is found to have abused the membership program, made false statements, provided false or invalid documents, or violated any of the terms and conditions of the Wayshk Online Shop membership, Wayshk may exercise the right to suspend or terminate the membership of the member concerned, and the points issued or accumulated by the member will be revoked or nullified.</p>
-                <p>7 Wayshk reserves the right to reject the application of any applicant, review the membership of the member and terminate the membership of any member without providing any reason for the final decision. </p>
-                <p>8. Wayshk will not be held responsible for incorrect credits, which may be caused by technical failures or factors beyond our control.</p>
+                <h2 class="mb-3" style="font-weight: bold;">Royal Cheese O Membership Program</h2>
+                <p>1. Each applicant can only apply for one Royal Cheese Online Shop membership.</p>
+                <p>2. The application fee for Royal Cheese Online Shop Membership is free of charge.</p>
+                <p>3. The Royal Cheese Membership Program is only available on the website.</p>
+                <p>4. Royal Cheese online store membership and points can only be used by the member himself/herself and cannot be transferred to others.</p>
+                <p>5. All membership information, points and rewards redemption records shall be based on the records kept by Royal Cheese.</p>
+                <p>6. If a member is found to have abused the membership program, made false statements, provided false or invalid documents, or violated any of the terms and conditions of the Royal Cheese Online Shop membership, Royal Cheese may exercise the right to suspend or terminate the membership of the member concerned, and the points issued or accumulated by the member will be revoked or nullified.</p>
+                <p>7 Royal Cheese reserves the right to reject the application of any applicant, review the membership of the member and terminate the membership of any member without providing any reason for the final decision. </p>
+                <p>8. Royal Cheese will not be held responsible for incorrect credits, which may be caused by technical failures or factors beyond our control.</p>
                 <p>9. The terms and conditions of this membership program are subject to change from time to time without notice.</p>
-                <p>10. In case of any dispute, Wayshk reserves the right to interpret, exercise and decide on all terms and conditions;</p>
+                <p>10. In case of any dispute, Royal Cheese reserves the right to interpret, exercise and decide on all terms and conditions;</p>
                 <p>11. If there is any systemic problem with the membership program, please contact us as soon as possible, we will correct and continuously improve the relevant services as soon as possible</p>
             </div>
         </div>

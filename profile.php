@@ -29,9 +29,9 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
     <title>User Profile</title>
 
@@ -181,7 +181,7 @@ include('include/header.php');
                         </div>
                     </div>
                     <div class="log-in-title mt-5">
-                        <h3>Welcome To WaysHK</h3>
+                        <h3>Welcome To Royal Cheese</h3>
                         <h4>Submit your Comment.</h4>
                     </div>
 

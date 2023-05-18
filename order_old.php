@@ -13,11 +13,11 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
-    <title>訂購方法 | Wayshk</title>
+    <title>訂購方法 | Royal Cheese</title>
 
     <?php include('include/css.php'); ?>
     <style>
@@ -103,7 +103,7 @@ include('include/header.php');
                             </div>
                             <h4>填妥產品訂購表格</h4>
                             <p>
-                                點擊按鈕下載產品訂購表格，電郵到 wayshk.order@gmail.com 或以 Whatsapp 發給 +852 52657359
+                                點擊按鈕下載產品訂購表格，電郵到 Royal Cheese.order@gmail.com 或以 Whatsapp 發給 +852 52657359
                             </p>
                             <div class="row mt-5">
                                 <div class="col-6">
@@ -153,8 +153,8 @@ include('include/header.php');
                             <p>
                                 *** 帶有標籤「即將到貨」或顯示為沒有庫存的貨品， 即為預購產品， 到貨期不定。
                                 將會等候訂單內貨品齊全後才出貨。 歡迎向我們查詢詳情。<br/>
-                                *** 貨品顏色及款色將隨機發放； 但Wayshk明白孩子對顏色的執著，
-                                如有任何特別要求可以在新增說明裏填寫。Wayshk會嘗試盡量配合。
+                                *** 貨品顏色及款色將隨機發放； 但Royal Cheese明白孩子對顏色的執著，
+                                如有任何特別要求可以在新增說明裏填寫。Royal Cheese會嘗試盡量配合。
                             </p>
                         </div>
                     </div>
@@ -212,7 +212,7 @@ include('include/header.php');
 
                         <div class="delivery-list">
                             <p class="text-content">
-                                閣下遞交及/或確認訂單即表示閣下明白並接受Wayshk（下稱本店）的購物條款及細則，遞交及確認方式不限於網上購物平台，亦包括透過電話、電郵或親臨寄賣店等遞交及確認的訂單。
+                                閣下遞交及/或確認訂單即表示閣下明白並接受Royal Cheese（下稱本店）的購物條款及細則，遞交及確認方式不限於網上購物平台，亦包括透過電話、電郵或親臨寄賣店等遞交及確認的訂單。
                                 <br/>
                                 1. 所有貨品售完即止。如有任何貨品售罄，本店將不會作出事前通知。本店亦保留拒絕接受及/或限制訂單數量的權利，且毋須給予任何解釋。如有上述情況，本店將以透過電話或電郵通知閣下。
                                 <br/>
@@ -232,7 +232,7 @@ include('include/header.php');
                                 <br/>
                                 3.  優惠券代碼、優惠、贈品只適用於指定客戶或推廣，如有錯誤的使用情況下，不論是人為出錯或系統故障造成，本店將自動更正並會以電話        或電郵通知閣下再確認。如果客戶在提交訂單之前未輸入優惠券代碼，則將被視為放棄使用優惠券的優惠。
                                 <br/>
-                                4. 購買前請先諮詢店員有關產品用法，本店不會就錯誤或不當使用產品而引至任何問題承擔任何責任；本店保留不時修改和修訂售價、送貨收      費及網上購物條款及細則的權利，並毋須作出事前通知；如有任何爭議，Wayshk保留最終決定權。
+                                4. 購買前請先諮詢店員有關產品用法，本店不會就錯誤或不當使用產品而引至任何問題承擔任何責任；本店保留不時修改和修訂售價、送貨收      費及網上購物條款及細則的權利，並毋須作出事前通知；如有任何爭議，Royal Cheese保留最終決定權。
                             </p>
                         </div>
                     </div>

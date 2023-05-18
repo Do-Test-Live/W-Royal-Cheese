@@ -13,11 +13,11 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
 
-    <title>Online booking | Wayshk</title>
+    <title>Online booking | Royal Cheese</title>
 
     <?php include('include/css.php'); ?>
     <style>
@@ -112,7 +112,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk 恐龍蓋印路線</h3>
+                                    <h3>Royal Cheese 恐龍蓋印路線</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -137,7 +137,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk 新年補正方形筆控</h3>
+                                    <h3>Royal Cheese 新年補正方形筆控</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -164,7 +164,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk 空間關係圖形連線</h3>
+                                    <h3>Royal Cheese 空間關係圖形連線</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -189,7 +189,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk 點點連線</h3>
+                                    <h3>Royal Cheese 點點連線</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -214,7 +214,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_中文形狀卡</h3>
+                                    <h3>Royal Cheese_中文形狀卡</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -241,7 +241,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_南瓜補筆畫 </h3>
+                                    <h3>Royal Cheese_南瓜補筆畫 </h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -266,7 +266,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_圖形扣環 紙樣</h3>
+                                    <h3>Royal Cheese_圖形扣環 紙樣</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -291,7 +291,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_圖形數數看</h3>
+                                    <h3>Royal Cheese_圖形數數看</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -318,7 +318,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_寫前概念 </h3>
+                                    <h3>Royal Cheese_寫前概念 </h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -343,7 +343,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_彩虹積木</h3>
+                                    <h3>Royal Cheese_彩虹積木</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -368,7 +368,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_復活蛋剪紙練習</h3>
+                                    <h3>Royal Cheese_復活蛋剪紙練習</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -395,7 +395,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_復活蛋塗顏色</h3>
+                                    <h3>Royal Cheese_復活蛋塗顏色</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -420,7 +420,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_復活蛋對稱圖案</h3>
+                                    <h3>Royal Cheese_復活蛋對稱圖案</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -445,7 +445,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_復活蛋畫鬼腳</h3>
+                                    <h3>Royal Cheese_復活蛋畫鬼腳</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -472,7 +472,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_復活蛋筆控練習</h3>
+                                    <h3>Royal Cheese_復活蛋筆控練習</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -497,7 +497,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_恐龍連線練習.pdf</h3>
+                                    <h3>Royal Cheese_恐龍連線練習.pdf</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -522,7 +522,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_方格填色</h3>
+                                    <h3>Royal Cheese_方格填色</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -549,7 +549,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_線條追蹤(難) </h3>
+                                    <h3>Royal Cheese_線條追蹤(難) </h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -574,7 +574,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_線條追蹤（難）</h3>
+                                    <h3>Royal Cheese_線條追蹤（難）</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -599,7 +599,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_老虎填格仔拼圖</h3>
+                                    <h3>Royal Cheese_老虎填格仔拼圖</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -626,7 +626,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_老虎帽子手工 </h3>
+                                    <h3>Royal Cheese_老虎帽子手工 </h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -651,7 +651,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_老虎筆控</h3>
+                                    <h3>Royal Cheese_老虎筆控</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -676,7 +676,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_聖誕樹小圓</h3>
+                                    <h3>Royal Cheese_聖誕樹小圓</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -703,7 +703,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_蘋果數數看 Level 2</h3>
+                                    <h3>Royal Cheese_蘋果數數看 Level 2</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -728,7 +728,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_蘋果數數看 Level 3</h3>
+                                    <h3>Royal Cheese_蘋果數數看 Level 3</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -753,7 +753,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_蘋果數數看 Level 5</h3>
+                                    <h3>Royal Cheese_蘋果數數看 Level 5</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -780,7 +780,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_蜘蛛筆控</h3>
+                                    <h3>Royal Cheese_蜘蛛筆控</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -805,7 +805,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_補圖形</h3>
+                                    <h3>Royal Cheese_補圖形</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -830,7 +830,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_雪球筆控</h3>
+                                    <h3>Royal Cheese_雪球筆控</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -857,7 +857,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_鴨靈號桌座標</h3>
+                                    <h3>Royal Cheese_鴨靈號桌座標</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -882,7 +882,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk專注力圈數字</h3>
+                                    <h3>Royal Cheese專注力圈數字</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -907,7 +907,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk聖誕數字蓋印</h3>
+                                    <h3>Royal Cheese聖誕數字蓋印</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -934,7 +934,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk_鴨靈號桌座標</h3>
+                                    <h3>Royal Cheese_鴨靈號桌座標</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -959,7 +959,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk專注力圈數字</h3>
+                                    <h3>Royal Cheese專注力圈數字</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">
@@ -984,7 +984,7 @@ include('include/header.php');
 
                             <div class="blog-contain">
                                 <a href="#">
-                                    <h3>Wayshk聖誕數字蓋印</h3>
+                                    <h3>Royal Cheese聖誕數字蓋印</h3>
                                 </a>
                                 <hr/>
                                 <div class="blog-label">

@@ -10,9 +10,9 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
     <title>Terms and Conditions</title>
 
@@ -90,7 +90,7 @@ include('include/header.php');
                 </ul>
                 <ul>
                     <li>By submitting and/or confirming the order, it means that you understand and accept the terms and
-                        conditions of Wayshk Children's Goods Store (hereinafter referred to as our shop ). Submission and
+                        conditions of Royal Cheese Children's Goods Store (hereinafter referred to as our shop ). Submission and
                         confirmation of orders are not limited to online shopping platform, but also include orders made
                         through telephone, email or in person .</li>
                 </ul>

@@ -244,10 +244,10 @@ if(isset($_POST['delivery'])){
             }
         }
         $email_to = $email;
-        $subject = 'Wayshk';
+        $subject = 'Royal Cheese';
 
 
-        $headers = "From: Wayshk <" . $db_handle->from_email() . ">\r\n";
+        $headers = "From: Royal Cheese <" . $db_handle->from_email() . ">\r\n";
         $headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
         $messege = "

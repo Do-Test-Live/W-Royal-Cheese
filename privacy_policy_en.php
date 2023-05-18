@@ -10,9 +10,9 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
     <title>User Profile</title>
 
@@ -86,7 +86,7 @@ include('include/header.php');
                 <h4>The statement was written in Chinese and translated to English. In case of any dispute, the Chinese version shall prevail.
                 </h4>
                 <ul>
-                    <li>Wayshk children’goods store takes personal privacy seriously and ensures that the procedures for the collection, use, storage, transfer and access of personal data by its services in all circumstances comply with the requirements of the Personal Data (Privacy) Ordinance of Hong Kong. We will ensure that our staff comply strictly with this Personal Information Collection Statement and our Privacy Statement. Please read below to understand our personal data collection policy.</li>
+                    <li>Royal Cheese children’goods store takes personal privacy seriously and ensures that the procedures for the collection, use, storage, transfer and access of personal data by its services in all circumstances comply with the requirements of the Personal Data (Privacy) Ordinance of Hong Kong. We will ensure that our staff comply strictly with this Personal Information Collection Statement and our Privacy Statement. Please read below to understand our personal data collection policy.</li>
                 </ul>
                 <h4 class="mt-3" style="font-weight: bold">I. Scope of the Privacy Policy</h4>
                 <ul>
@@ -100,7 +100,7 @@ include('include/header.php');
                     </li>
 
                     <li>
-                        <i class="fa-solid fa-check"></i> This website will use the personal information you provided to offer you the products, activities, courses or services you require, including the purposes associated with participating in all activities, courses or services, issuing receipts, collecting feedback and analysing data. Your personal data will also be used to provide you with promotional information about the activities, courses and services offered by the Wayshk Childrens’ Goods Shop and related units. It is your responsibility to provide the information listed as "required" on the application form or required to initiate the relevant process, otherwise we may not be able to provide the services you have requested.
+                        <i class="fa-solid fa-check"></i> This website will use the personal information you provided to offer you the products, activities, courses or services you require, including the purposes associated with participating in all activities, courses or services, issuing receipts, collecting feedback and analysing data. Your personal data will also be used to provide you with promotional information about the activities, courses and services offered by the Royal Cheese Childrens’ Goods Shop and related units. It is your responsibility to provide the information listed as "required" on the application form or required to initiate the relevant process, otherwise we may not be able to provide the services you have requested.
 
                     </li>
                     <li><i class="fa-solid fa-check"></i> During general browsing, the server will record your IP address, time of use, browser used, browsing and clicking data, etc. for our reference in order to enhance our website services.

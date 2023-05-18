@@ -13,11 +13,11 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
-    <title>About Us | Wayshk </title>
+    <title>About Us | Royal Cheese </title>
 
     <?php include('include/css.php'); ?>
     <style>
@@ -78,7 +78,7 @@ include('include/header.php');
                                 <li>
                                     <div class="delivery-box">
                                         <div class="delivery-detail">
-                                            <h5 class="text">Wayshk children's goods store operates in a small scale. We
+                                            <h5 class="text">Royal Cheese children's goods store operates in a small scale. We
                                                 have professional occupational therapists who have carefully sourced
                                                 training materials and toys from around the world for customers. We also
                                                 sell self-designed creative educational materials to help children learn

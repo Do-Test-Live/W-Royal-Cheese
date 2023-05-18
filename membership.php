@@ -10,9 +10,9 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
     <title>User Profile</title>
 
@@ -58,7 +58,7 @@ include('include/header.php');
         <div class="row">
             <div class="col-12">
                 <div class="breadscrumb-contain">
-                    <h2 class="mb-2">Wayshk網店會員計劃</h2>
+                    <h2 class="mb-2">Royal Cheese網店會員計劃</h2>
                     <nav>
                         <ol class="breadcrumb mb-0">
                             <li class="breadcrumb-item">
@@ -91,14 +91,14 @@ include('include/header.php');
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
                                         style="font-weight: bold;">
-                                    1. 如何加入Wayshk會員計劃？<i
+                                    1. 如何加入Royal Cheese會員計劃？<i
                                         class="fa-solid fa-angle-down"></i>
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                  aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>於官網主頁進入「Wayshk網店會員積分計劃」頁面，再按 「註冊會員」 以電話號碼建立會員帳戶，註冊成功即可獲取200積分。（只限年滿十八歲或以上人士參與）</p>
+                                    <p>於官網主頁進入「Royal Cheese網店會員積分計劃」頁面，再按 「註冊會員」 以電話號碼建立會員帳戶，註冊成功即可獲取200積分。（只限年滿十八歲或以上人士參與）</p>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +115,7 @@ include('include/header.php');
                                  data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>每次購物先登入會員帳戶，每次成功付款提交訂單，積分會自動存入及紀錄在閣下消費帳戶內。</p>
-                                    <p>Wayshk網店會員可透過以下方式獲取積分：</p>
+                                    <p>Royal Cheese網店會員可透過以下方式獲取積分：</p>
                                     <p>
                                         （i）註冊會員- 註冊成為網店會員，可賺取200分。
                                     </p>
@@ -123,14 +123,14 @@ include('include/header.php');
                                         積分會以向下取整的方式計算至個位數，例如優惠後購物淨額為港幣99.5元，顧客
                                         便可穫得99分會員積分。
                                     </p>
-                                    <p>（iii）推薦獎賞 - 邀請朋友成為Wayshk網店會員，朋友於網店進行首次消費後，推介人可獲取200分 (不限次數  )。</p>
+                                    <p>（iii）推薦獎賞 - 邀請朋友成為Royal Cheese網店會員，朋友於網店進行首次消費後，推介人可獲取200分 (不限次數  )。</p>
                                     <p>
                                         （iv）試玩評價回贈– 購買產品/參與課程後，撰寫含照片的試玩評價，每一個產品評價可額外獲取200分。
                                     </p>
                                     <p>* 消費金額不包括運費及其他服務費用</p>
                                     <p>* 會員積分只在會員登入後付款才可獲贈，如果顧客選用訪客形式結帳，將不能獲得積 分，積分恕不補發</p>
                                     <p>*網店指定產品包括禮包/特價產品不能賺取積分，請留意推廣內容及通知</p>
-                                    <p>*會員計劃只適用於Wayshk網店，於線下以其他方式下單未能參與積分計劃</p>
+                                    <p>*會員計劃只適用於Royal Cheese網店，於線下以其他方式下單未能參與積分計劃</p>
                                     <p>*積分發放後，可自行在「會員積分」記錄頁面查看，恕不會代查積分</p>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@ include('include/header.php');
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                  data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>進入Wayshk網店，登錄會員帳戶：</p>
+                                    <p>進入Royal Cheese網店，登錄會員帳戶：</p>
                                     <p>（i）會員帳戶內累積積分可以兌換並下載指定訓練教材</p>
                                     <p>（ii）現金回贈- 每40 分可當作1元使用（最低回贈金額為1元，不足40分未能計算）； 於下次購物時，可使用累積積分付款，沒有最低消費限制</p>
                                     <p>* 積分不能兌換現金或轉讓予他人</p>
@@ -200,7 +200,7 @@ include('include/header.php');
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                  data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>如果您忘記了自己的登入密碼，可按畫面上邊的「登入」，然後按「忘記密碼」。您可以輸入已登記的電郵地址，然後按下邊的「送出」按鈕。Wayshk 會把重設密碼連結發送到您的私人密碼發送到您登記的電郵信箱。</p>
+                                    <p>如果您忘記了自己的登入密碼，可按畫面上邊的「登入」，然後按「忘記密碼」。您可以輸入已登記的電郵地址，然後按下邊的「送出」按鈕。Royal Cheese 會把重設密碼連結發送到您的私人密碼發送到您登記的電郵信箱。</p>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +217,7 @@ include('include/header.php');
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                                  data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>如會員要求取消Wayshk會籍，請電郵至ways00.hk@gmail.com向Wayshk作出申請。於確認有關資料後，Wayshk將於30個工作天內作出安排，所有未兌換的積分及其他優惠會全部被取消。</p>
+                                    <p>如會員要求取消Royal Cheese會籍，請電郵至ways00.hk@gmail.com向Royal Cheese作出申請。於確認有關資料後，Royal Cheese將於30個工作天內作出安排，所有未兌換的積分及其他優惠會全部被取消。</p>
                                 </div>
                             </div>
                         </div>
@@ -228,17 +228,17 @@ include('include/header.php');
         <div class="row mt-5">
             <div class="col-12">
                 <h1 class="mt-3 mb-3 inner-header">條款及細則</h1>
-                <h2 class="mb-3" style="font-weight: bold;">Wayshk網店會員計劃</h2>
-                <p>1. 每位申請人只限申請Wayshk網店會籍乙個。</p>
-                <p>2. 申請Wayshk網店會籍費用全免。</p>
-                <p>3. Wayshk會員計劃只適用於網頁。</p>
-                <p>4.Wayshk網店會員會籍及積分只限會員本人使用，不得轉讓他人。</p>
-                <p>5. 所有會員資料、積分及獎賞換領紀錄，均以Wayshk所存之紀錄為準。</p>
-                <p>6.倘若發現會員濫用會員計劃、作出不實陳述、提供虛假或無效之文件、違反Wayshk網店會員會籍之任何條款及細則，Wayshk可行使權利暫停或終止有關會員之會籍，其已獲發或累積之積分亦會撤銷或作廢。</p>
-                <p>7 Wayshk保留在不提供任何理由的情況下，拒絕任何申請人的申請、審查會員之會籍及終止任何會員所屬會籍之最終決定權。 </p>
-                <p>8. Wayshk不會就錯誤積分而負擔任何責任，錯誤積分可因為技術故障或超出本公司控制範圍內的各種因素而導致。</p>
+                <h2 class="mb-3" style="font-weight: bold;">Royal Cheese網店會員計劃</h2>
+                <p>1. 每位申請人只限申請Royal Cheese網店會籍乙個。</p>
+                <p>2. 申請Royal Cheese網店會籍費用全免。</p>
+                <p>3. Royal Cheese會員計劃只適用於網頁。</p>
+                <p>4.Royal Cheese網店會員會籍及積分只限會員本人使用，不得轉讓他人。</p>
+                <p>5. 所有會員資料、積分及獎賞換領紀錄，均以Royal Cheese所存之紀錄為準。</p>
+                <p>6.倘若發現會員濫用會員計劃、作出不實陳述、提供虛假或無效之文件、違反Royal Cheese網店會員會籍之任何條款及細則，Royal Cheese可行使權利暫停或終止有關會員之會籍，其已獲發或累積之積分亦會撤銷或作廢。</p>
+                <p>7 Royal Cheese保留在不提供任何理由的情況下，拒絕任何申請人的申請、審查會員之會籍及終止任何會員所屬會籍之最終決定權。 </p>
+                <p>8. Royal Cheese不會就錯誤積分而負擔任何責任，錯誤積分可因為技術故障或超出本公司控制範圍內的各種因素而導致。</p>
                 <p>9. 本網店會員計劃使用細則，將不時作出修改，恕不作通知</p>
-                <p>10. 如有任何爭議，Wayshk就所有條款及細則保留任何解釋、行使及決定權利；</p>
+                <p>10. 如有任何爭議，Royal Cheese就所有條款及細則保留任何解釋、行使及決定權利；</p>
                 <p>11. 會員計劃如出現任何系統性問題，請盡快與我們聯絡，我們會盡快修正並持續改善相關服務，不便之處，敬請原諒。</p>
             </div>
         </div>

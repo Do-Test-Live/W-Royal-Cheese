@@ -13,11 +13,11 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
-    <title>Order Method | Wayshk</title>
+    <title>Order Method | Royal Cheese</title>
 
     <?php include('include/css.php'); ?>
     <style>
@@ -186,15 +186,15 @@ include('include/header.php');
                         <h2 style="font-weight: 700;font-size: 18px; margin-bottom: 0 !important; color: black;">D.
                             Bank deposit</h2>
                         <p style="padding-left: 20px;">Account number : 769-334699-883 (Hang Seng Bank)</p>
-                        <p style="padding-left: 20px;">Account name : Wayshk</p>
+                        <p style="padding-left: 20px;">Account name : Royal Cheese</p>
                         <p style="padding-left: 20px;">* After payment, send the deposit proof to +852 5605 8389 via
                             Whatsapp</p>
                         <h2 style="font-weight: 700;font-size: 18px; margin-bottom: 0 !important; color: black;">E.
                             Credit card payment [an additional 5% handling fee is required]</h2>
                         <h2 style="font-weight: 700;font-size: 18px; margin-bottom: 0 !important; color: black;">F.
                             Payment by Check (for Institutional/School Orders Only)</h2>
-                        <p style="padding-left: 20px;">Please make the check payable to "Wayshk", and indicate Attn:
-                            Wayshk on the envelope. Mail the check to RM1, 3/F, Kinglet Industrial Building, 21-23 Shing
+                        <p style="padding-left: 20px;">Please make the check payable to "Royal Cheese", and indicate Attn:
+                            Royal Cheese on the envelope. Mail the check to RM1, 3/F, Kinglet Industrial Building, 21-23 Shing
                             Wan Rd, Tai Wai</p>
                         <h2 style="font-weight: 700;font-size: 18px; margin-bottom: 0 !important; color: black;">There
                             Are Electronic Documents For All Orders Placed Online; If You Need The True Copy Of Company
@@ -233,7 +233,7 @@ include('include/header.php');
                     <div>
                         <h2 class="header-title">Shipping</h2>
                         <p style="font-weight: 700;">1. The delivery period of stock products is 0-7 days; and uncertain for pre-order products is uncertain. Welcome to contact us for details.</p></br>
-                        <p style="font-weight: 700;">2. The color and style of the products will be distributed randomly. If you have any requirements for the color/style of the product. Please fill in the description box. Wayshk will try to meet your request. There is no return or exchange once the products are delivered.</p></br>
+                        <p style="font-weight: 700;">2. The color and style of the products will be distributed randomly. If you have any requirements for the color/style of the product. Please fill in the description box. Royal Cheese will try to meet your request. There is no return or exchange once the products are delivered.</p></br>
                         <p style="font-weight: 700;">3. If you accidentally fill in the wrong address, please contact us as soon as possible for amendment. If the shipment has been arranged, you will not be able to change the address.</p></br>
                     </div>
                 </div>

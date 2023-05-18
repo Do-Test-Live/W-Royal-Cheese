@@ -13,11 +13,11 @@ $db_handle = new DBController();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wayshk">
-    <meta name="keywords" content="Wayshk">
-    <meta name="author" content="Wayshk">
+    <meta name="description" content="Royal Cheese">
+    <meta name="keywords" content="Royal Cheese">
+    <meta name="author" content="Royal Cheese">
     <link rel="icon" href="assets/images/favicon/2.png" type="image/x-icon">
-    <title>Order Method | Wayshk</title>
+    <title>Order Method | Royal Cheese</title>
 
     <?php include('include/css.php'); ?>
     <style>
@@ -178,11 +178,11 @@ include('include/header.php');
                         <h2 style="font-weight: 700;font-size: 18px; margin-bottom: 0 !important; color: black;">D.
                             銀行入數</h2>
                         <p style="padding-left: 20px;">戶口號碼為 769-334699-883 (恆生銀行)</p>
-                        <p style="padding-left: 20px;">戶口名稱: Wayshk</p>
+                        <p style="padding-left: 20px;">戶口名稱: Royal Cheese</p>
                         <p style="padding-left: 20px;">* 付款後把入數證明以Whatsapp傳至+852 5605 8389</p>
                         <h2 style="font-weight: 700;font-size: 18px; margin-bottom: 0 !important; color: black;">E. 信用卡支付 【需支付額外5% 手續費】</h2>
                         <h2 style="font-weight: 700;font-size: 18px; margin-bottom: 0 !important; color: black;">F. 支票付款 （只限機構/學校訂單）</h2>
-                        <p style="padding-left: 20px;">支票抬頭請書明受款人為「 Wayshk」, 信封請註明 Attn: Wayshk , 並郵寄往大圍成運路21-23號群力工業大廈3樓1室</p>
+                        <p style="padding-left: 20px;">支票抬頭請書明受款人為「 Royal Cheese」, 信封請註明 Attn: Royal Cheese , 並郵寄往大圍成運路21-23號群力工業大廈3樓1室</p>
                         <h2 style="font-weight: 700;font-size: 18px; margin-bottom: 0 !important; color: black;">於網上下單均有電子單據 ；如需公司蓋印報價單/收帳單/收據，先於下單時列明提出/以電郵查詢</h2>
                     </div>
                 </div>
@@ -218,7 +218,7 @@ include('include/header.php');
                     <div>
                         <h2 class="header-title">出貨</h2>
                         <p style="font-weight: 700;">1. 現貨產品出貨期 0-7日；預購產品，到貨期不定。歡迎向我們查詢詳情。</p></br>
-                        <p style="font-weight: 700;">2. 貨品顏色及款色將隨機發放；但若顧客對於貨品顏色/款色有任何要求， 請在新增說明裏填寫。有存貨的話，Wayshk會嘗試盡量配合。一但送貨後 對顏色款式不滿意，恕不退換。</p></br>
+                        <p style="font-weight: 700;">2. 貨品顏色及款色將隨機發放；但若顧客對於貨品顏色/款色有任何要求， 請在新增說明裏填寫。有存貨的話，Royal Cheese會嘗試盡量配合。一但送貨後 對顏色款式不滿意，恕不退換。</p></br>
                         <p style="font-weight: 700;">3. 如果不慎填錯地址，若您的訂單尚未出貨，請您盡快聯絡我們作出更改。如已為您安排出貨，將無法更改地址。</p></br>
                     </div>
                 </div>
