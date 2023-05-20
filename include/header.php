@@ -364,39 +364,6 @@ if (isset($_SESSION["cart_item"])) {
                                             <li class="nav-item">
                                                 <a class="nav-link" href="Shop">所有產品</i></a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="About-Us">關於我們</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="Order">訂購方法</a>
-                                            </li>
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-                                                   data-bs-toggle="dropdown">更多 <i
-                                                            class="fa-solid fa-angle-down"></i></a>
-
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a class="dropdown-item" href="Institution">機構/學校訂購</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item"
-                                                           href="Living-Seeds-Children">活籽兒童服務社</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item"
-                                                           href="Course">精選課程</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item"
-                                                           href="Textbook-Download">教材下載</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item"
-                                                           href="Membership-Program">會員計劃</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
                                         </ul>
                                         <?php
                                     } else {

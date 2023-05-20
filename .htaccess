@@ -1,4 +1,4 @@
-ErrorDocument 404 https://Royal Cheese.ngt.hk/W-Royal Cheese/404.php
+ErrorDocument 404 https://royalcheese.ngt.hk/404.php
 
 RewriteEngine on
 

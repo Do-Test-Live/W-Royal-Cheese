@@ -1,9 +1,9 @@
 <?php
 class DBController {
     private $host = "localhost";
-    private $user = "root";
-    private $password = "";
-    private $database = "royal_cheese";
+    private $user = "uwmoqghbmovgk";
+    private $password = "#)*G6%51fb1z";
+    private $database = "dbjix2ujozm1hu";
     private $from_email='noreply@Royal Cheese.ngt.hk';
     private $notification_email='mingowhk@gmail.com';
     private $conn;

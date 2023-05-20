@@ -72,7 +72,7 @@
                                                 <i data-feather="phone"></i>
                                                 <div class="contact-number">
                                                     <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo 'Whatsapp'; else echo 'Whatsapp';?></h6>
-                                                    <a href="http://wa.me/85256058389" target="_blank">+852 56058389</a>
+                                                    <a href="http://wa.me/" target="_blank">+000000000000</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -82,7 +82,7 @@
                                                 <i data-feather="mail"></i>
                                                 <div class="contact-number">
                                                     <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo '電郵地址'; else echo 'Email Address :';?></h6>
-                                                    <a href="mailto:ways00.hk@gmail.com">Royal Cheese.order@gmail.com</a>
+                                                    <a href="mailto:ways00.hk@gmail.com">royalcheese@gmail.com</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -93,7 +93,7 @@
                         }else{
                             ?>
                             <div class="footer-logo-contain">
-                                <a href="javascript:void(0)">Room 1, 3rd Floor, Qunli Industrial Building, 21-23 Shing Wan Road, Tai Wai, Hong Kong</a></br></br>
+                                <a href="javascript:void(0)">Address</a></br></br>
                                 <div class="footer-title">
                                     <h4>Ordering Product:</h4>
                                 </div>
@@ -105,7 +105,7 @@
                                                 <i data-feather="phone"></i>
                                                 <div class="contact-number">
                                                     <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo 'Whatsapp'; else echo 'Whatsapp';?></h6>
-                                                    <a href="http://wa.me/85256058389" target="_blank">+852 56058389</a>
+                                                    <a href="http://wa.me/" target="_blank">+000000000</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -115,7 +115,7 @@
                                                 <i data-feather="mail"></i>
                                                 <div class="contact-number">
                                                     <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo '電郵地址'; else echo 'Email Address :';?></h6>
-                                                    <a href="mailto:ways00.hk@gmail.com">Royal Cheese.order@gmail.com</a>
+                                                    <a href="mailto:ways00.hk@gmail.com">RoyalCheese@gmail.com</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -144,18 +144,6 @@
                                 </li>
                                 <li>
                                     <a href="Shop" class="text-content">所有產品</a>
-                                </li>
-                                <li>
-                                    <a href="About-Us" class="text-content">關於我們</a>
-                                </li>
-                                <li>
-                                    <a href="Order" class="text-content">訂購方法</a>
-                                </li>
-                                <li>
-                                    <a href="Institution" class="text-content">機構/學校訂購</a>
-                                </li>
-                                <li>
-                                    <a href="Living-Seeds-Children" class="text-content">活籽兒童服務社</a>
                                 </li>
                                 <!--<li>
                                     <a href="Occupational-Therapy-Courses" class="text-content">精選課程</a>
@@ -224,7 +212,7 @@
                                     <i data-feather="phone"></i>
                                     <div class="contact-number">
                                         <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo 'Whatsapp'; else echo 'Whatsapp';?></h6>
-                                        <a href="http://wa.me/85252657359" target="_blank">+852 52657359</a>
+                                        <a href="http://wa.me/" target="_blank">+0000000000</a>
                                     </div>
                                 </div>
                             </li>
@@ -234,7 +222,7 @@
                                     <i data-feather="mail"></i>
                                     <div class="contact-number">
                                         <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo '電郵地址'; else echo 'Email Address :';?></h6>
-                                        <a href="mailto:ways00.hk@gmail.com">ways00.hk@gmail.com</a>
+                                        <a href="mailto:ways00.hk@gmail.com">royalcheese@gmail.com</a>
                                     </div>
                                 </div>
                             </li>
@@ -244,40 +232,11 @@
             </div>
         </div>
 
-        <div class="sub-footer section-small-space">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="reserve">
-                        <h6 class="text-content">©2023 Royal Cheese All rights reserved</h6>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="payment">
-                        <img src="assets/images/payment/1.png" class="blur-up lazyload img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 d-flex justify-content-md-end justify-content-center">
-                    <div class="social-link">
-                        <h6 class="text-content">Stay connected :</h6>
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/Royal Cheese000?mibextid=LQQJ4d" target="_blank">
-                                    <i class="fa-brands fa-2x fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/ways_hk?igshid=YmMyMTA2M2Y=" target="_blank">
-                                    <i class="fa-brands fa-2x fa-instagram"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="http://wa.me/85252657359" target="_blank">
-                                    <i class="fa-brands fa-2x fa-whatsapp"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        <div>
+        <hr/> 
+            <div class="row pt-3 pb-4">
+                <div class="col-12 text-center">
+                    <h6>©2023 Royal Cheese All rights reserved</h6>
                 </div>
             </div>
         </div>

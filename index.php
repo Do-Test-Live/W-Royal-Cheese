@@ -117,7 +117,7 @@ include('include/header.php');
                             <h5>Hot Deals on New Items</h5>
                             <h6 class="text-content">Daily Essentials Eggs & Dairy</h6>
                         </div>
-                        <a href="shop-left-sidebar.html" class="banner-button text-white">Shop Now <i
+                        <a href="Shop" class="banner-button text-white">Shop Now <i
                                     class="fa-solid fa-right-long ms-2"></i></a>
                     </div>
                 </div>
@@ -132,7 +132,7 @@ include('include/header.php');
                             <h5>Buy More & Save More</h5>
                             <h6 class="text-content">Fresh Vegetables</h6>
                         </div>
-                        <a href="shop-left-sidebar.html" class="banner-button text-white">Shop Now <i
+                        <a href="Shop" class="banner-button text-white">Shop Now <i
                                     class="fa-solid fa-right-long ms-2"></i></a>
                     </div>
                 </div>
@@ -147,7 +147,7 @@ include('include/header.php');
                             <h5>Organic Meat Prepared</h5>
                             <h6 class="text-content">Delivered to Your Home</h6>
                         </div>
-                        <a href="shop-left-sidebar.html" class="banner-button text-white">Shop Now <i
+                        <a href="Shop" class="banner-button text-white">Shop Now <i
                                     class="fa-solid fa-right-long ms-2"></i></a>
                     </div>
                 </div>
@@ -162,7 +162,7 @@ include('include/header.php');
                             <h5>Buy More & Save More</h5>
                             <h6 class="text-content">Nuts & Snacks</h6>
                         </div>
-                        <a href="shop-left-sidebar.html" class="banner-button text-white">Shop Now <i
+                        <a href="Shop" class="banner-button text-white">Shop Now <i
                                     class="fa-solid fa-right-long ms-2"></i></a>
                     </div>
                 </div>
@@ -224,7 +224,10 @@ include('include/header.php');
                                     </a>
 
                                     <h5 class="sold text-content">
-                                        <span class="theme-color price"><?php echo $fetch_product [$i]['product_price'] ?></span>
+                                        <span class="theme-color price">
+                                        HK$<?php echo $fetch_product [$i]['product_price'] ?>/
+                                        <?php echo $fetch_product [$i]['product_weight'] ?>g
+                                        </span>
                                     </h5>
 
                                     <div class="product-rating mt-2">
@@ -304,7 +307,10 @@ include('include/header.php');
                                         </a>
 
                                         <h5 class="sold text-content">
-                                            <span class="theme-color price"><?php echo $fetch_product [$i + 1]['product_price'] ?></span>
+                                            <span class="theme-color price">
+                                            HK$<?php echo $fetch_product [$i + 1]['product_price'] ?>/
+                                            <?php echo $fetch_product [$i + 1]['product_weight'] ?>g
+                                            </span>
                                         </h5>
 
                                         <div class="product-rating mt-2">
@@ -372,17 +378,6 @@ include('include/header.php');
                         </div>
                     </div>
 
-                    <div class="ratio_125 section-t-space wow fadeIn">
-                        <div class="banner-contain-2 rounded hover-effect">
-                            <?php
-                            $second_add = $db_handle->runQuery("select * from banner where id = '6'");
-                            ?>
-                            <img src="<?php echo $second_add[0]['banner_img']; ?>" class="bg-img blur-up lazyload"
-                                 alt="">
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -414,19 +409,19 @@ include('include/header.php');
                             </h3>
                             <ul class="social-icon">
                                 <li>
-                                    <a href="https://www.instagram.com/ways_hk/?igshid=YmMyMTA2M2Y%3D">
+                                    <a href="https://www.instagram.com/">
                                         <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="https://www.facebook.com/Royal Cheese000?mibextid=LQQJ4d">
+                                    <a href="https://www.facebook.com/">
                                         <i class="fa-brands fa-facebook-f"></i>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="http://wa.me/85252657359">
+                                    <a href="http://wa.me/">
                                         <i class="fa-brands fa-whatsapp"></i>
                                     </a>
                                 </li>
@@ -444,7 +439,7 @@ include('include/header.php');
 <section class="top-selling-section">
     <div class="container-fluid-lg">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="row">
                     <div class="col-12">
                         <div class="top-selling-box">
@@ -494,7 +489,10 @@ include('include/header.php');
                                             </ul>
                                             <span>(34)</span>
                                         </div>-->
-                                        <h6><?php echo $fetch_product[$i]['product_price']; ?></h6>
+                                        <h6>
+                                        HK$<?php echo $fetch_product[$i]['product_price']; ?>/
+                                        <?php echo $fetch_product [$i]['product_weight'] ?>g
+                                        </h6>
                                     </div>
                                 </div>
                                 <?php
@@ -505,7 +503,7 @@ include('include/header.php');
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="row">
                     <div class="col-12">
                         <div class="top-selling-box">
@@ -555,7 +553,10 @@ include('include/header.php');
                                             </ul>
                                             <span>(34)</span>
                                         </div>-->
-                                        <h6><?php echo $product[$i]['product_price']; ?></h6>
+                                        <h6>
+                                        HK$<?php echo $fetch_product[$i]['product_price']; ?>/
+                                        <?php echo $fetch_product [$i]['product_weight'] ?>g
+                                        </h6>
                                     </div>
                                 </div>
                                 <?php
@@ -566,7 +567,7 @@ include('include/header.php');
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="row">
                     <div class="col-12">
                         <div class="top-selling-box">
@@ -617,7 +618,10 @@ include('include/header.php');
                                             </ul>
                                             <span>(34)</span>
                                         </div>-->
-                                        <h6><?php echo $fetch_product3[$i]['product_price']; ?></h6>
+                                        <h6>
+                                        HK$<?php echo $fetch_product[$i]['product_price']; ?>/
+                                        <?php echo $fetch_product [$i]['product_weight'] ?>g
+                                        </h6>
                                     </div>
                                 </div>
                                 <?php

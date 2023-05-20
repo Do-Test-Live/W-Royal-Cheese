@@ -280,7 +280,10 @@ include('include/header.php');
                                                 </ul>
                                             </div>-->
                                             <h5 class="price"><span
-                                                        class="theme-color"><?php echo $fetch_products[$i]['product_price'] ?> HKD</span>
+                                                        class="theme-color">
+                                                        HK$<?php echo $fetch_products [$i]['product_price'] ?>/
+                                                        <?php echo $fetch_products [$i]['product_weight'] ?>g
+                                                        </span>
                                             </h5>
                                             <div class="add-to-cart-box bg-white">
                                                 <a href="Product-Details?product_id=<?php echo $fetch_products[$i]['id'];?>" class="btn btn-add-cart addcart-button"><?php if($_SESSION['language'] === 'CN') echo '查看詳情'; else echo 'Add';?>
@@ -409,7 +412,10 @@ include('include/header.php');
                                             </a>
 
                                             <h5 class="price"><span
-                                                        class="theme-color"><?php echo $fetch_products[$i]['product_price'] ?> HKD</span>
+                                                        class="theme-color">
+                                                        HK$<?php echo $fetch_products [$i]['product_price'] ?>/
+                                                        <?php echo $fetch_products [$i]['product_weight'] ?>g
+                                                        </span>
                                             </h5>
                                             <div class="add-to-cart-box bg-white">
                                                 <a href="Product-Details?product_id=<?php echo $fetch_products[$i]['id'];?>" class="btn btn-add-cart addcart-button"><?php if($_SESSION['language'] === 'CN') echo '查看詳情'; else echo 'Add';?>

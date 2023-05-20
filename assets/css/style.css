@@ -1,30 +1,30 @@
 .theme-color-1 {
-    --theme-color: #f5d367;
+    --theme-color: #494955;
     --theme-color-rgb: 217, 159, 70
 }
 
 .theme-color-2 {
-    --theme-color: #f5d367;
+    --theme-color: #494955;
     --theme-color-rgb: 11, 175, 154
 }
 
 .theme-color-3 {
-    --theme-color: #f5d367;
+    --theme-color: #494955;
     --theme-color-rgb: 35, 150, 152
 }
 
 .theme-color-4 {
-    --theme-color: #f5d367;
+    --theme-color: #494955;
     --theme-color-rgb: 35, 150, 152
 }
 
 .theme-color-5 {
-    --theme-color: #f5d367;
+    --theme-color: #494955;
     --theme-color-rgb: 65, 115, 148
 }
 
 :root {
-    --theme-color: #f5d367;
+    --theme-color: #494955;
     --theme-color-rgb: 13, 164, 135;
     --theme-color1: #0e947a;
     --theme-color1-rgb: 14, 148, 122;
