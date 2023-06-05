@@ -92,87 +92,6 @@ include('include/header.php');
 <!-- Home Section End -->
 
 
-<!-- Category Section Start -->
-
-<!-- Category Section End -->
-
-<!-- Discount Section Start -->
-
-<!-- Discount Section End -->
-
-<!-- Banner Section Start -->
-<!-- Banner Section End -->
-
-<!--card section-->
-<!-- Banner Section Start -->
-<section class="banner-section ratio_60 wow fadeInUp">
-    <div class="container-fluid-lg">
-        <div class="banner-slider">
-            <div>
-                <div class="banner-contain hover-effect">
-                    <img src="assets/images/vegetable/banner/4.jpg" class="bg-img blur-up lazyload" alt="">
-                    <div class="banner-details">
-                        <div class="banner-box">
-                            <h6 class="text-danger">5% OFF</h6>
-                            <h5>Hot Deals on New Items</h5>
-                            <h6 class="text-content">Daily Essentials Eggs & Dairy</h6>
-                        </div>
-                        <a href="Shop" class="banner-button text-white">Shop Now <i
-                                    class="fa-solid fa-right-long ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="banner-contain hover-effect">
-                    <img src="assets/images/vegetable/banner/5.jpg" class="bg-img blur-up lazyload" alt="">
-                    <div class="banner-details">
-                        <div class="banner-box">
-                            <h6 class="text-danger">5% OFF</h6>
-                            <h5>Buy More & Save More</h5>
-                            <h6 class="text-content">Fresh Vegetables</h6>
-                        </div>
-                        <a href="Shop" class="banner-button text-white">Shop Now <i
-                                    class="fa-solid fa-right-long ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="banner-contain hover-effect">
-                    <img src="assets/images/vegetable/banner/6.jpg" class="bg-img blur-up lazyload" alt="">
-                    <div class="banner-details">
-                        <div class="banner-box">
-                            <h6 class="text-danger">5% OFF</h6>
-                            <h5>Organic Meat Prepared</h5>
-                            <h6 class="text-content">Delivered to Your Home</h6>
-                        </div>
-                        <a href="Shop" class="banner-button text-white">Shop Now <i
-                                    class="fa-solid fa-right-long ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="banner-contain hover-effect">
-                    <img src="assets/images/vegetable/banner/7.jpg" class="bg-img blur-up lazyload" alt="">
-                    <div class="banner-details">
-                        <div class="banner-box">
-                            <h6 class="text-danger">5% OFF</h6>
-                            <h5>Buy More & Save More</h5>
-                            <h6 class="text-content">Nuts & Snacks</h6>
-                        </div>
-                        <a href="Shop" class="banner-button text-white">Shop Now <i
-                                    class="fa-solid fa-right-long ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Banner Section End -->
-<!--card section end-->
-
 <!-- Product Section Start -->
 <section>
     <div class="container-fluid-lg">
@@ -225,8 +144,8 @@ include('include/header.php');
 
                                     <h5 class="sold text-content">
                                         <span class="theme-color price">
-                                        HK$<?php echo $fetch_product [$i]['product_price'] ?>/
-                                        <?php echo $fetch_product [$i]['product_weight'] ?>g
+                                        HK$<?php echo substr($fetch_product [$i]['product_price'], 0, strpos($fetch_product [$i]['product_price'], ',')) ?>/
+                                        <?php echo substr($fetch_product [$i]['product_weight'], 0, strpos($fetch_product [$i]['product_weight'], ',')) ?>g
                                         </span>
                                     </h5>
 
@@ -308,8 +227,8 @@ include('include/header.php');
 
                                         <h5 class="sold text-content">
                                             <span class="theme-color price">
-                                            HK$<?php echo $fetch_product [$i + 1]['product_price'] ?>/
-                                            <?php echo $fetch_product [$i + 1]['product_weight'] ?>g
+                                                HK$<?php echo substr($fetch_product [$i+1]['product_price'], 0, strpos($fetch_product [$i+1]['product_price'], ',')) ?>/
+                                                <?php echo substr($fetch_product [$i+1]['product_weight'], 0, strpos($fetch_product [$i+1]['product_weight'], ',')) ?>g
                                             </span>
                                         </h5>
 
@@ -397,19 +316,13 @@ include('include/header.php');
                     <img src="<?php echo $banner_middle[0]['banner_img']; ?>" class="bg-img blur-up lazyload" alt="">
                     <div class="home-detail p-center position-relative text-center">
                         <div>
-                            <h3 class="text-danger text-uppercase fw-bold mb-0">
-                                <?php echo $banner_middle[0]['heading_one_cn'];?>
-                            </h3>
-                            <h2 class="theme-color text-pacifico fw-normal mb-0 super-sale text-center">
-                                <?php echo $banner_middle[0]['heading_two_cn']; ?>
-                            </h2>
                             <h2 class="home-name text-uppercase"> <?php if ($_SESSION['language'] === 'CN') echo $banner_middle[0]['heading_three_cn']; else echo $banner_middle[0]['heading_three']; ?></h2>
                             <h3 class="text-pacifico fw-normal text-content text-center">
                                 <?php echo $banner_middle[0]['details_cn']; ?>
                             </h3>
                             <ul class="social-icon">
                                 <li>
-                                    <a href="https://www.instagram.com/">
+                                    <a href="https://www.instagram.com/royal_cheese.ragdoll/?igshid=NTc4MTIwNjQ2YQ%3D%3D">
                                         <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </li>
@@ -490,8 +403,8 @@ include('include/header.php');
                                             <span>(34)</span>
                                         </div>-->
                                         <h6>
-                                        HK$<?php echo $fetch_product[$i]['product_price']; ?>/
-                                        <?php echo $fetch_product [$i]['product_weight'] ?>g
+                                            HK$<?php echo substr($fetch_product [$i]['product_price'], 0, strpos($fetch_product [$i]['product_price'], ',')) ?>/
+                                            <?php echo substr($fetch_product [$i]['product_weight'], 0, strpos($fetch_product [$i]['product_weight'], ',')) ?>g
                                         </h6>
                                     </div>
                                 </div>
@@ -554,8 +467,9 @@ include('include/header.php');
                                             <span>(34)</span>
                                         </div>-->
                                         <h6>
-                                        HK$<?php echo $fetch_product[$i]['product_price']; ?>/
-                                        <?php echo $fetch_product [$i]['product_weight'] ?>g
+                                            HK$<?php echo substr($fetch_product [$i]['product_price'], 0, strpos($fetch_product [$i]['product_price'], ',')) ?>/
+                                            <?php echo substr($fetch_product [$i]['product_weight'], 0, strpos($fetch_product [$i]['product_weight'], ',')) ?>g
+
                                         </h6>
                                     </div>
                                 </div>
@@ -619,8 +533,8 @@ include('include/header.php');
                                             <span>(34)</span>
                                         </div>-->
                                         <h6>
-                                        HK$<?php echo $fetch_product[$i]['product_price']; ?>/
-                                        <?php echo $fetch_product [$i]['product_weight'] ?>g
+                                            HK$<?php echo substr($fetch_product [$i]['product_price'], 0, strpos($fetch_product [$i]['product_price'], ',')) ?>/
+                                            <?php echo substr($fetch_product [$i]['product_weight'], 0, strpos($fetch_product [$i]['product_weight'], ',')) ?>g
                                         </h6>
                                     </div>
                                 </div>
@@ -636,12 +550,6 @@ include('include/header.php');
     <?php
     /*                            }
                                 */ ?>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
 </section>
 <!-- Top Selling Section End -->
 

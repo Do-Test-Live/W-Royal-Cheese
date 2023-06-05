@@ -59,11 +59,65 @@ if (isset($_POST['updateProduct'])) {
     $product_price = $db_handle->checkValue($_POST['product_price']);
     $cost = $db_handle->checkValue($_POST['cost']);
     $product_weight = $db_handle->checkValue($_POST['product_weight']);
+    $query = '';
 
     $updated_at = date("Y-m-d H:i:s");
 
+    if (!empty($_FILES['images']['tmp_name'][0])) {
+        // At least one image is selected
+
+        $dataFileName = []; // Array to store the file names
+
+        // Loop through each uploaded image file
+        foreach ($_FILES['images']['tmp_name'] as $index => $uploadedFile) {
+            $originalFileName = $_FILES['images']['name'][$index];
+            // Get the original image size and type
+            list($originalWidth, $originalHeight, $imageType) = getimagesize($uploadedFile);
+
+            // Create image resource from uploaded file based on image type
+            switch ($imageType) {
+                case IMAGETYPE_JPEG:
+                    $image = imagecreatefromjpeg($uploadedFile);
+                    break;
+                case IMAGETYPE_PNG:
+                    $image = imagecreatefrompng($uploadedFile);
+                    break;
+                case IMAGETYPE_GIF:
+                    $image = imagecreatefromgif($uploadedFile);
+                    break;
+                default:
+                    throw new Exception('Unsupported image type.');
+            }
+
+            // Resize the image to 250x250 and save it
+            $newImage = imagecreatetruecolor(250, 250);
+            imagecopyresampled($newImage, $image, 0, 0, 0, 0, 250, 250, $originalWidth, $originalHeight);
+            $RandomAccountNumber = mt_rand(1, 99999);
+            imagejpeg($newImage, 'assets/products_image/250/' . $RandomAccountNumber . '_' . $originalFileName . '.jpg');
+
+            // Resize the image to 650x650 and save it
+            $newImage = imagecreatetruecolor(650, 650);
+            imagecopyresampled($newImage, $image, 0, 0, 0, 0, 650, 650, $originalWidth, $originalHeight);
+            $RandomAccountNumber = mt_rand(1, 99999);
+            imagejpeg($newImage, 'assets/products_image/650/' . $RandomAccountNumber . '_' . $originalFileName . '.jpg');
+            $dataFileName[] = 'assets/products_image/650/' . $RandomAccountNumber . '_' . $originalFileName . '.jpg';
+
+            // Free up memory
+            imagedestroy($image);
+            imagedestroy($newImage);
+        }
+
+        $databaseValue = implode(',', $dataFileName);
+        $query .= ",`p_image`='" . $databaseValue . "'";
+        $fetch_image = $db_handle->runQuery("select p_image from product WHERE id={$id}");
+        $img = explode(',',$fetch_image[0]['p_image']);
+        foreach ($img as $i){
+            unlink($i);
+        }
+    }
+
     $data = $db_handle->insertQuery("UPDATE `product` SET `category_id`='$product_category',`product_code`='$product_code',`p_name`='$p_name',`description`='$product_description',`description_en` = '$product_description_en',
-                     `status`='$status',`updated_at`='$updated_at',`product_price`='$product_price',`p_name_en` = '$p_name_en',`cost` = '$cost',`product_weight` = '$product_weight', `deal_today` = '$today_deal' WHERE id={$id}");
+                     `status`='$status',`updated_at`='$updated_at',`product_price`='$product_price',`p_name_en` = '$p_name_en',`cost` = '$cost',`product_weight` = '$product_weight', `deal_today` = '$today_deal'" . $query . " WHERE id={$id}");
     echo "<script>
                 document.cookie = 'alert = 3;';
                 window.location.href='Product';

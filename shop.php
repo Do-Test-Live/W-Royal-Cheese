@@ -93,39 +93,9 @@ include('include/header.php');
                 <div class="slider-1 slider-animate product-wrapper no-arrow">
                     <div>
                         <div class="banner-contain-2 hover-effect">
-                            <img src="assets/images/shop/1.jpg" class="bg-img rounded-3 blur-up lazyload" alt="">
-                            <div
-                                    class="banner-detail p-center-right position-relative shop-banner ms-auto banner-small">
-                                <div>
-                                    <h2>Healthy, nutritious & Tasty Fruits & Veggies</h2>
-                                    <h3>Save upto 50%</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="banner-contain-2 hover-effect">
-                            <img src="assets/images/shop/2.jpg" class="bg-img rounded-3 blur-up lazyload" alt="">
-                            <div
-                                    class="banner-detail p-center-right position-relative shop-banner ms-auto banner-small">
-                                <div>
-                                    <h2>Healthy, nutritious & Tasty Fruits & Veggies</h2>
-                                    <h3>Save upto 50%</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="banner-contain-2 hover-effect">
-                            <img src="assets/images/shop/3.jpg" class="bg-img rounded-3 blur-up lazyload" alt="">
-                            <div
-                                    class="banner-detail p-center-right position-relative shop-banner ms-auto banner-small">
-                                <div>
-                                    <h2>Healthy, nutritious & Tasty Fruits & Veggies</h2>
-                                    <h3>Save upto 50%</h3>
-                                </div>
+                            <img src="assets/images/banner/image_2023_03_20T11_43_26_490Z.jpg" class="bg-img rounded-3 blur-up lazyload" alt="">
+                            <div style="height:250px">
+                                
                             </div>
                         </div>
                     </div>
@@ -281,8 +251,8 @@ include('include/header.php');
                                             </div>-->
                                             <h5 class="price"><span
                                                         class="theme-color">
-                                                        HK$<?php echo $fetch_products [$i]['product_price'] ?>/
-                                                        <?php echo $fetch_products [$i]['product_weight'] ?>g
+                                                     HK$<?php echo substr($fetch_products [$i]['product_price'], 0, strpos($fetch_products [$i]['product_price'], ',')) ?>/
+                                                     <?php echo substr($fetch_products [$i]['product_weight'], 0, strpos($fetch_products [$i]['product_weight'], ',')) ?>g
                                                         </span>
                                             </h5>
                                             <div class="add-to-cart-box bg-white">
@@ -413,9 +383,9 @@ include('include/header.php');
 
                                             <h5 class="price"><span
                                                         class="theme-color">
-                                                        HK$<?php echo $fetch_products [$i]['product_price'] ?>/
-                                                        <?php echo $fetch_products [$i]['product_weight'] ?>g
-                                                        </span>
+                                                        HK$<?php echo substr($fetch_products [$i]['product_price'], 0, strpos($fetch_products [$i]['product_price'], ',')) ?>/
+                                                     <?php echo substr($fetch_products [$i]['product_weight'], 0, strpos($fetch_products [$i]['product_weight'], ',')) ?>g
+                                                       </span>
                                             </h5>
                                             <div class="add-to-cart-box bg-white">
                                                 <a href="Product-Details?product_id=<?php echo $fetch_products[$i]['id'];?>" class="btn btn-add-cart addcart-button"><?php if($_SESSION['language'] === 'CN') echo '查看詳情'; else echo 'Add';?>

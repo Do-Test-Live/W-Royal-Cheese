@@ -64,7 +64,7 @@ include('include/header.php');
                     <?php
                     $product = $db_handle->runQuery("select * from product where id = '$product_id'");
                     ?>
-                    <h2><?php if($_SESSION['language'] === 'CN') echo $product[0]['p_name']; else echo $product[0]['p_name_en'];?></h2>
+                    <h2><?php if ($_SESSION['language'] === 'CN') echo $product[0]['p_name']; else echo $product[0]['p_name_en']; ?></h2>
                     <nav>
                         <ol class="breadcrumb mb-0">
                             <li class="breadcrumb-item">
@@ -73,7 +73,7 @@ include('include/header.php');
                                 </a>
                             </li>
 
-                            <li class="breadcrumb-item active"><?php if($_SESSION['language'] === 'CN') echo $product[0]['p_name']; else echo $product[0]['p_name_en'];?></li>
+                            <li class="breadcrumb-item active"><?php if ($_SESSION['language'] === 'CN') echo $product[0]['p_name']; else echo $product[0]['p_name_en']; ?></li>
                         </ol>
                     </nav>
                 </div>
@@ -98,13 +98,14 @@ include('include/header.php');
                                             <div class="col-xxl-10 col-lg-12 col-md-10 order-xxl-2 order-lg-1 order-md-2">
                                                 <div class="product-main-2 no-arrow">
                                                     <?php
-                                                    $image = explode(',',$product[0]['p_image']);
-                                                    foreach ($image as $img){
+                                                    $image = explode(',', $product[0]['p_image']);
+                                                    foreach ($image as $img) {
                                                         ?>
                                                         <div>
                                                             <div class="slider-image">
-                                                                <img src="admin/<?php echo $img;?>" id="img-1"
-                                                                     class="img-fluid image_zoom_cls-0 blur-up lazyload" alt="">
+                                                                <img src="admin/<?php echo $img; ?>" id="img-1"
+                                                                     class="img-fluid image_zoom_cls-0 blur-up lazyload"
+                                                                     alt="">
                                                             </div>
                                                         </div>
                                                         <?php
@@ -116,11 +117,11 @@ include('include/header.php');
                                             <div class="col-xxl-2 col-lg-12 col-md-2 order-xxl-1 order-lg-2 order-md-1">
                                                 <div class="left-slider-image-2 left-slider no-arrow slick-top">
                                                     <?php
-                                                    foreach ($image as $img){
+                                                    foreach ($image as $img) {
                                                         ?>
                                                         <div>
                                                             <div class="sidebar-image">
-                                                                <img src="admin/<?php echo $img;?>"
+                                                                <img src="admin/<?php echo $img; ?>"
                                                                      class="img-fluid blur-up lazyload" alt="">
                                                             </div>
                                                         </div>
@@ -139,11 +140,28 @@ include('include/header.php');
 
                     <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="right-box-contain">
-                            <h2 class="name"><?php if($_SESSION['language'] === 'CN') echo $product[0]['p_name']; else echo $product[0]['p_name_en'];?></h2>
+                            <h2 class="name"><?php if ($_SESSION['language'] === 'CN') echo $product[0]['p_name']; else echo $product[0]['p_name_en']; ?></h2>
+
+                            <div class="d-flex mb-3">
+                                <?php
+                                $prduct_price = $product[0]['product_price'];
+                                $product_weight = $product[0]['product_weight'];
+                                $i = 0;
+                                $variableAry = explode(",", $prduct_price);
+                                $variableWeight = explode(",", $product_weight);
+                                foreach ($variableAry as $var) {
+                                    echo "<button type='button' style='border:1px solid black' onclick='changePrice(" . $var . ");' class='btn btn-light me-2'>" . $variableWeight[$i] . "g</button>";
+                                    $i++;
+                                }
+                                ?>
+                            </div>
+
                             <div class="price-rating">
-                                <h3 class="theme-color price"><?php echo $product[0]['product_price']; ?>
+                                <h3 class="theme-color price">
+                                    HK$<b id="price"><?php echo $variableAry[0]; ?></b>
                                     <!--<span
-                                            class="offer theme-color">(8% off)</span>--></h3>
+                                            class="offer theme-color">(8% off)</span>-->
+                                </h3>
                                 <div class="product-rating custom-rate">
                                     <!--<ul class="rating">
                                         <li>
@@ -164,14 +182,19 @@ include('include/header.php');
                                     </ul>-->
                                     <!--<span class="review">23 Customer Review</span>-->
                                     <?php
+                                    $quantity = 0;
                                     $fetch_quantity_no = $db_handle->numRows("select quantity from stock where product_id = '$product_id'");
                                     $fetch_quantity = $db_handle->runQuery("select quantity from stock where product_id = '$product_id'");
-                                    $quantity = $fetch_quantity[0]['quantity'];
-                                    if($fetch_quantity_no > 0 && $quantity > 0){
+
+                                    if (isset($fetch_quantity)) {
+                                        $quantity = $fetch_quantity[0]['quantity'];
+                                    }
+
+                                    if ($fetch_quantity_no > 0 && $quantity > 0) {
                                         ?>
                                         <h6 class="theme-color"><?php if ($_SESSION['language'] === 'CN') echo '尚有存貨'; else echo 'In Stock'; ?></h6>
                                         <?php
-                                    }else{
+                                    } else {
                                         ?>
                                         <h6 class="theme-color"><?php if ($_SESSION['language'] === 'CN') echo '預購'; else echo 'Preorder'; ?></h6>
                                         <?php
@@ -181,7 +204,7 @@ include('include/header.php');
                             </div>
 
                             <div class="procuct-contain">
-                                <p><?php if($_SESSION['language'] === 'CN') echo $product[0]['description']; else echo $product[0]['description_en'];?>
+                                <p><?php if ($_SESSION['language'] === 'CN') echo $product[0]['description']; else echo $product[0]['description_en']; ?>
                                 </p>
                             </div>
 
@@ -196,7 +219,7 @@ include('include/header.php');
                     <!-- Trending Product -->
                     <div class="pt-25">
                         <div class="category-menu">
-                            <h3><?php if($_SESSION['language'] === 'CN') echo '熱門產品'; else echo 'Trending Products';?></h3>
+                            <h3><?php if ($_SESSION['language'] === 'CN') echo '熱門產品'; else echo 'Trending Products'; ?></h3>
 
                             <ul class="product-list product-right-sidebar border-0 p-0">
                                 <?php
@@ -209,16 +232,18 @@ include('include/header.php');
                                         <div class="offer-product">
                                             <a href="Product-Details?product_id=<?php echo $tranding_product[$i]['id']; ?>"
                                                class="offer-image">
-                                                <img src="admin/<?php echo str_replace("650", "250", strtok($tranding_product [$i]['p_image'],',')); ?>"
+                                                <img src="admin/<?php echo str_replace("650", "250", strtok($tranding_product [$i]['p_image'], ',')); ?>"
                                                      class="img-fluid blur-up lazyload" alt="">
                                             </a>
 
                                             <div class="offer-detail">
                                                 <div>
                                                     <a href="Product-Details?product_id=<?php echo $tranding_product[$i]['id']; ?>">
-                                                        <h6 class="name"><?php if($_SESSION['language'] === 'CN') echo $tranding_product[$i]['p_name']; else  echo $tranding_product[$i]['p_name_en'];?></h6>
+                                                        <h6 class="name"><?php if ($_SESSION['language'] === 'CN') echo $tranding_product[$i]['p_name']; else  echo $tranding_product[$i]['p_name_en']; ?></h6>
                                                     </a>
-                                                    <h6 class="price theme-color"><?php echo $tranding_product[$i]['product_price']; ?></h6>
+                                                    <h6 class="price theme-color">
+                                                        HK$<?php echo substr($tranding_product [$i]['product_price'], 0, strpos($tranding_product [$i]['product_price'], ',')) ?>
+                                                    </h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -241,7 +266,7 @@ include('include/header.php');
     <div class="container-fluid-lg">
         <div class="title">
             <h2>
-                <?php if($_SESSION['language'] === 'CN') echo '相關產品'; else echo 'Related Products';?>
+                <?php if ($_SESSION['language'] === 'CN') echo '相關產品'; else echo 'Related Products'; ?>
             </h2>
         </div>
         <div class="row">
@@ -258,7 +283,7 @@ include('include/header.php');
                             <div class="product-box product-box-bg wow fadeInUp">
                                 <div class="product-image">
                                     <a href="Product-Details?product_id=<?php echo $related_products [$i]['id']; ?>">
-                                        <img src="admin/<?php echo str_replace("650", "250", strtok($related_products [$i]['p_image'],',')); ?>"
+                                        <img src="admin/<?php echo str_replace("650", "250", strtok($related_products [$i]['p_image'], ',')); ?>"
                                              class="img-fluid blur-up lazyload" alt="">
                                     </a>
                                     <ul class="product-option">
@@ -278,12 +303,12 @@ include('include/header.php');
                                 <div class="product-detail">
                                     <a href="Product-Details?product_id=<?php echo $related_products [$i]['id']; ?>">
                                         <h6 class="name">
-                                            <?php if($_SESSION['language'] == 'CN') echo $related_products [$i]['p_name']; else echo $related_products [$i]['p_name_en'];?>
+                                            <?php if ($_SESSION['language'] == 'CN') echo $related_products [$i]['p_name']; else echo $related_products [$i]['p_name_en']; ?>
                                         </h6>
                                     </a>
 
                                     <h5 class="sold text-content">
-                                        <span class="theme-color price"><?php echo $related_products [$i]['product_price'] ?></span>
+                                        <span class="theme-color price">HK$<?php echo substr($related_products [$i]['product_price'], 0, strpos($related_products [$i]['product_price'], ',')) ?></span>
                                     </h5>
 
                                     <div class="product-rating mt-2">
@@ -309,11 +334,11 @@ include('include/header.php');
                                         $fetch_quantity_no = $db_handle->numRows("select quantity from stock where product_id = '$product_id'");
                                         $fetch_quantity = $db_handle->runQuery("select quantity from stock where product_id = '$product_id'");
                                         $quantity = $fetch_quantity[0]['quantity'];
-                                        if($fetch_quantity_no > 0 && $quantity > 0){
+                                        if ($fetch_quantity_no > 0 && $quantity > 0) {
                                             ?>
                                             <h6 class="theme-color"><?php if ($_SESSION['language'] === 'CN') echo '尚有存貨'; else echo 'In Stock'; ?></h6>
                                             <?php
-                                        }else{
+                                        } else {
                                             ?>
                                             <h6 class="theme-color"><?php if ($_SESSION['language'] === 'CN') echo '預購'; else echo 'Preorder'; ?></h6>
                                             <?php
@@ -323,7 +348,7 @@ include('include/header.php');
 
                                     <div class="add-to-cart-box bg-white">
                                         <a href="#">
-                                            <button class="btn btn-add-cart addcart-button"><?php if($_SESSION['language'] === 'CN') echo '查看詳情'; else echo 'Add';?>
+                                            <button class="btn btn-add-cart addcart-button"><?php if ($_SESSION['language'] === 'CN') echo '查看詳情'; else echo 'Add'; ?>
                                             </button>
                                         </a>
                                     </div>
@@ -346,7 +371,7 @@ include('include/footer.php');
 ?>
 <!-- Footer Section End -->
 <!-- Deal Box Modal Start -->
-<?php include ('include/deal.php');?>
+<?php include('include/deal.php'); ?>
 <!-- Deal Box Modal End -->
 
 <!-- Tap to top start -->
@@ -453,6 +478,11 @@ include('include/footer.php');
 <!-- script js -->
 <script src="assets/js/script.js"></script>
 
+<script>
+    function changePrice(value) {
+        document.getElementById('price').innerHTML = value+'.00';
+    }
+</script>
 
 </body>
 

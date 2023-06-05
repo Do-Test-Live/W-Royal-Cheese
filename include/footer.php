@@ -72,17 +72,7 @@
                                                 <i data-feather="phone"></i>
                                                 <div class="contact-number">
                                                     <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo 'Whatsapp'; else echo 'Whatsapp';?></h6>
-                                                    <a href="http://wa.me/" target="_blank">+000000000000</a>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="footer-number">
-                                                <i data-feather="mail"></i>
-                                                <div class="contact-number">
-                                                    <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo '電郵地址'; else echo 'Email Address :';?></h6>
-                                                    <a href="mailto:ways00.hk@gmail.com">royalcheese@gmail.com</a>
+                                                    <a href="http://wa.me/" target="_blank">+852 52441954</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -105,20 +95,11 @@
                                                 <i data-feather="phone"></i>
                                                 <div class="contact-number">
                                                     <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo 'Whatsapp'; else echo 'Whatsapp';?></h6>
-                                                    <a href="http://wa.me/" target="_blank">+000000000</a>
+                                                    <a href="http://wa.me/" target="_blank">+852 52441954</a>
                                                 </div>
                                             </div>
                                         </li>
 
-                                        <li>
-                                            <div class="footer-number">
-                                                <i data-feather="mail"></i>
-                                                <div class="contact-number">
-                                                    <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo '電郵地址'; else echo 'Email Address :';?></h6>
-                                                    <a href="mailto:ways00.hk@gmail.com">RoyalCheese@gmail.com</a>
-                                                </div>
-                                            </div>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -189,11 +170,11 @@
                     <div class="footer-contain">
                         <ul>
                             <li>
-                                <a href="<?php if($_SESSION['language'] === 'CN') echo 'privacy_policy.php'; else echo 'privacy_policy_en.php';?>" class="text-content">
+                                <a href="#" class="text-content">
                                     <?php if($_SESSION['language'] === 'CN') echo '私隱政策'; else echo 'Privacy Policy';?></a>
                             </li>
                             <li>
-                                <a href="<?php if($_SESSION['language'] === 'CN') echo 'terms_condition.php'; else echo 'terms_condition_en.php';?>" class="text-content">
+                                <a href="#" class="text-content">
                                     <?php if($_SESSION['language'] === 'CN') echo '條款細則'; else echo 'Terms and Condition';?></a>
                             </li>
                         </ul>
@@ -212,17 +193,7 @@
                                     <i data-feather="phone"></i>
                                     <div class="contact-number">
                                         <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo 'Whatsapp'; else echo 'Whatsapp';?></h6>
-                                        <a href="http://wa.me/" target="_blank">+0000000000</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="footer-number">
-                                    <i data-feather="mail"></i>
-                                    <div class="contact-number">
-                                        <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo '電郵地址'; else echo 'Email Address :';?></h6>
-                                        <a href="mailto:ways00.hk@gmail.com">royalcheese@gmail.com</a>
+                                        <a href="http://wa.me/" target="_blank">+852 52441954</a>
                                     </div>
                                 </div>
                             </li>
@@ -236,7 +207,7 @@
         <hr/> 
             <div class="row pt-3 pb-4">
                 <div class="col-12 text-center">
-                    <h6>©2023 Royal Cheese All rights reserved</h6>
+                    <h6>©2023 Royal Cheese All rights reserved. Powered by ngt.hk</h6>
                 </div>
             </div>
         </div>

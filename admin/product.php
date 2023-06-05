@@ -11,7 +11,7 @@ if (!isset($_SESSION['userid'])) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Product | Royal Cheese Admin</title>
+    <title>Product | Wayshk Admin</title>
     <!-- Datatable -->
     <link href="vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <?php include 'include/css.php'; ?>
@@ -111,6 +111,32 @@ if (!isset($_SESSION['userid'])) {
                                                        placeholder="Product Code"
                                                        value="<?php echo $data[0]["product_code"]; ?>" required>
                                             </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-sm-3 col-form-label">Image</label>
+                                            <div class="col-sm-6">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Upload</span>
+                                                    </div>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" name="images[]" accept="image/png, image/jpeg, image/jpg" multiple>
+                                                        <label class="custom-file-label">Choose file (png, jpg, jpeg)</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <?php
+                                            $image = explode(",",$data[0]['p_image']);
+                                            foreach ($image as $img){
+                                                ?>
+                                                <div class="col-sm-3">
+                                                    <img src="<?php echo $img ?>" class="img-fluid"
+                                                         alt=""/>
+                                                </div>
+                                                <?php
+                                            }
+                                            ?>
+
                                         </div>
                                         <div class="form-group col-md-12">
                                             <label>Product Description *</label>
