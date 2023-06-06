@@ -89,7 +89,6 @@ if (isset($_POST["add_product"])) {
             // Resize the image to 650x650 and save it
             $newImage = imagecreatetruecolor(650, 650);
             imagecopyresampled($newImage, $image, 0, 0, 0, 0, 650, 650, $originalWidth, $originalHeight);
-            $RandomAccountNumber = mt_rand(1, 99999);
             imagejpeg($newImage, 'assets/products_image/650/' . $RandomAccountNumber . '_' . $originalFileName);
 
             $dataFileName[] = 'assets/products_image/650/' . $RandomAccountNumber . '_' . $originalFileName;
