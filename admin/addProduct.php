@@ -70,7 +70,7 @@ if (!isset($_SESSION['userid'])) {
                                             <input type="text" class="form-control" name="product_code" placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <label>Product Weight</label>
+                                            <label>Product Weight (For Multiple Please Separate with Comma)</label>
                                             <input type="text" class="form-control" name="product_weight" placeholder="" required>
                                         </div>
                                         <div class="form-group col-md-12">
@@ -88,8 +88,8 @@ if (!isset($_SESSION['userid'])) {
                                             </select>
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <label>Product Selling Price *</label>
-                                            <input type="number" class="form-control" placeholder="" name="selling_price" required>
+                                            <label>Product Selling Price * (For Multiple Please Separate with Comma)</label>
+                                            <input type="text" class="form-control" placeholder="" name="selling_price" required>
                                         </div>
                                         <div class="form-group col-md-12">
                                             <label>Product Cost *</label>

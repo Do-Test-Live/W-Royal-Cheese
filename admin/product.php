@@ -68,7 +68,6 @@ if (!isset($_SESSION['userid'])) {
                                             <label class="col-sm-3 col-form-label">Product Name (CN)</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name="p_name"
-                                                       placeholder="Category Name"
                                                        value="<?php echo $data[0]["p_name"]; ?>" required>
                                             </div>
                                         </div>
@@ -76,15 +75,13 @@ if (!isset($_SESSION['userid'])) {
                                             <label class="col-sm-3 col-form-label">Product Name (EN)</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name="p_name_en"
-                                                       placeholder="Category Name"
                                                        value="<?php echo $data[0]["p_name_en"]; ?>" required>
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
-                                            <label class="col-sm-3 col-form-label">Product Price</label>
+                                            <label class="col-sm-3 col-form-label">Product Price (For Multiple Please Separate with Comma)</label>
                                             <div class="col-sm-9">
-                                                <input type="number" class="form-control" name="product_price"
-                                                       placeholder="Category Name"
+                                                <input type="text" class="form-control" name="product_price"
                                                        value="<?php echo $data[0]["product_price"]; ?>" required>
                                             </div>
                                         </div>
@@ -92,15 +89,13 @@ if (!isset($_SESSION['userid'])) {
                                             <label class="col-sm-3 col-form-label">Product Cost</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name="cost"
-                                                       placeholder="Category Name"
                                                        value="<?php echo $data[0]["cost"]; ?>" required>
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
-                                            <label class="col-sm-3 col-form-label">Product Weight</label>
+                                            <label class="col-sm-3 col-form-label">Product Weight (For Multiple Please Separate with Comma)</label>
                                             <div class="col-sm-9">
-                                                <input type="number" class="form-control" name="product_weight"
-                                                       placeholder="Category Name"
+                                                <input type="text" class="form-control" name="product_weight"
                                                        value="<?php echo $data[0]["product_weight"]; ?>" required>
                                             </div>
                                         </div>
@@ -108,7 +103,6 @@ if (!isset($_SESSION['userid'])) {
                                             <label class="col-sm-3 col-form-label">Product Code</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name="p_code"
-                                                       placeholder="Product Code"
                                                        value="<?php echo $data[0]["product_code"]; ?>" required>
                                             </div>
                                         </div>
