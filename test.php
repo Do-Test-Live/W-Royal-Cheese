@@ -85,7 +85,6 @@ $id = 2;
         .footer-table::before {
             position: absolute;
             content: "";
-            background-image: url(images/footer-left.svg);
             background-position: top right;
             top: 0;
             left: -71%;
@@ -100,7 +99,6 @@ $id = 2;
         .footer-table::after {
             position: absolute;
             content: "";
-            background-image: url(images/footer-right.svg);
             background-position: top right;
             top: 0;
             right: 0;
@@ -172,26 +170,12 @@ $id = 2;
                 <tr style="display: block;">
                     <td style="display: block;">
                         <h3 style="font-weight: 700; font-size: 20px; margin: 0; text-transform: uppercase; padding: 10px">
-                            王家芝士寵工房 會員註冊 </h3>
+                            Reset Password. </h3>
                     </td>
 
                     <td style='display: block; margin-left: 20px;'>
                         <p>
-                            您已成功登記。現在可以使用您的電郵和密碼登錄。
-                        </p>
-                    </td>
-
-                    <td style='display: block; margin-left: 20px'>
-                        <p>立即登入帳戶: <a href="https://rcrpetsworkshop.com/Login" target="_blank">https://rcrpetsworkshop.com/Login</a><br/><br/>
-                            敬請留意我們的最新產品及資訊<br/><br/>
-                        </p>
-                        <h3>付款方法: </h3>
-                        <p>
-                            付款方法可用轉數快、Payme 或八達通，<br/><br/>
-                            收到轉賬後2-10天內發貨，<br/><br/>
-                            請於付款後將入數資料whatsapp到52441954，<br/><br/>
-                            買滿$600可享順豐智能櫃包郵，<br/><br/>
-                            未滿$600則順豐到付。<br/><br/>
+                            Please visit this <a href="https://rcrpetsworkshop.com/Reset-Password?id=<?php echo $id;?>" target="_blank">link</a> and set new password for your account.
                         </p>
                     </td>
                 </tr>
@@ -215,7 +199,7 @@ $id = 2;
                             <tr>
                                 <td style="width: 100%; text-align: center;">
                                     <h5 style="font-size: 13px; text-transform: uppercase; margin: 10px 0 0; color:#ddd;
-                                letter-spacing:1px; font-weight: 500;">產品訂購或查詢: WhatsApp <a href="https://wa.me/85252441954" target="_blank" style="color: #ffcd1c;">+852 52441954</a></h5>
+                                                        letter-spacing:1px; font-weight: 500;">產品訂購或查詢: WhatsApp <a href="https://wa.me/85252441954" target="_blank" style="color: #ffcd1c;">+852 52441954</a></h5>
                                 </td>
                             </tr>
                         </table>
