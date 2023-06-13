@@ -4,16 +4,16 @@ class DBController {
     private $user = "root";
     private $password = "";
     private $database = "royal_cheese";
-    private $from_email='noreply@Royal Cheese.ngt.hk';
+    private $from_email='business@rcrpetsworkshop.com';
     private $notification_email='mingowhk@gmail.com';
     private $conn;
 
     function __construct() {
-        if($_SERVER['SERVER_NAME']=="www.royalcheese.ngt.hk"||$_SERVER['SERVER_NAME']=="royalcheese.ngt.hk"){
+        if($_SERVER['SERVER_NAME']=="www.rcrpetsworkshop.com"||$_SERVER['SERVER_NAME']=="rcrpetsworkshop.com"){
             $this->host = "localhost";
-            $this->user = "uwmoqghbmovgk";
+            $this->user = "ulfgqqowvzdfe";
             $this->password = "#)*G6%51fb1z";
-            $this->database = "dbjix2ujozm1hu";
+            $this->database = "dbdmkyce9ah6a2";
         }
 
         $this->conn = $this->connectDB();

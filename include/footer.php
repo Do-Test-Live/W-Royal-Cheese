@@ -72,7 +72,7 @@
                                                 <i data-feather="phone"></i>
                                                 <div class="contact-number">
                                                     <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo 'Whatsapp'; else echo 'Whatsapp';?></h6>
-                                                    <a href="http://wa.me/" target="_blank">+852 52441954</a>
+                                                    <a href="http://wa.me/85252441954" target="_blank">+852 52441954</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -193,7 +193,7 @@
                                     <i data-feather="phone"></i>
                                     <div class="contact-number">
                                         <h6 class="text-content"><?php if($_SESSION['language'] === 'CN') echo 'Whatsapp'; else echo 'Whatsapp';?></h6>
-                                        <a href="http://wa.me/" target="_blank">+852 52441954</a>
+                                        <a href="http://wa.me/85252441954" target="_blank">+852 52441954</a>
                                     </div>
                                 </div>
                             </li>

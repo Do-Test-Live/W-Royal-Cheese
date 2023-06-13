@@ -96,8 +96,8 @@ $db_handle = new DBController();
                             <form class="row g-4" action="admin/insert.php" method="post">
                                 <div class="col-12">
                                     <div class="form-floating theme-form-floating">
-                                        <input type="text" class="form-control" id="fullname" placeholder="<?php if ($_SESSION['language'] === 'CN') echo '全名'; else echo 'Full Name';?>" name="customer_name" required>
-                                        <label for="fullname"><?php if ($_SESSION['language'] === 'CN') echo '全名'; else echo 'Full Name';?></label>
+                                        <input type="text" class="form-control" id="fullname" placeholder="<?php if ($_SESSION['language'] === 'CN') echo '稱謂'; else echo 'Full Name';?>" name="customer_name" required>
+                                        <label for="fullname"><?php if ($_SESSION['language'] === 'CN') echo '稱謂'; else echo 'Full Name';?></label>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -121,14 +121,14 @@ $db_handle = new DBController();
                                     </div>
                                 </div>
 
-                                <div class="col-12">
+                                <div class="col-12 m-3">
                                     <div class="forgot-box">
                                         <div class="form-check ps-0 m-0 remember-box">
                                             <input class="checkbox_animated check-box" type="checkbox"
                                                 id="flexCheckDefault" required>
                                             <label class="form-check-label" for="flexCheckDefault">
                                                 <?php if($_SESSION['language'] === 'CN') echo '我同意
-                                                <span>我同意 私隱</span> 政策 及 <span>條款細則</span>'; else echo 'I agree with
+                                                <span>私隱</span> 政策 及<span>條款細則</span>'; else echo 'I agree with
                                                 <span>Terms</span> and <span>Privacy</span>';?>
                                                 </label>
                                         </div>

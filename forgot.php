@@ -107,7 +107,7 @@ $db_handle = new DBController();
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 mt-3">
                                         <button class="btn btn-animation w-100" type="submit"><?php if($_SESSION['language'] === 'CN') echo '忘記密碼'; else echo 'Forgot Password';?></button>
                                     </div>
                                 </form>

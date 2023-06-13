@@ -74,7 +74,7 @@ if (isset($_SESSION["cart_item"])) {
                     </div>
                 </div>-->
 
-                <div class="col-xxl-6 col-lg-9 d-lg-block d-none">
+                <div class="col-xxl-12 col-lg-12 d-lg-block d-none text-center">
                     <div class="header-offer">
                         <div class="notification-slider">
                             <div>
@@ -98,30 +98,8 @@ if (isset($_SESSION["cart_item"])) {
                                     </h6>
                                 </div>
                             </div>
-
-                            <!--<div>
-                                <div class="timer-notification">
-                                    <h6>Something you love is now on sale!
-                                        <a href="Shop" class="text-white">Buy Now
-                                            !</a>
-                                    </h6>
-                                </div>
-                            </div>-->
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <ul class="about-list right-nav-about">
-                        <li class="right-nav-list">
-                            <div class="theme-form-select">
-                                <button class="btn dropdown-toggle hkd" type="button" id="select-dollar"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span>HKD</span>
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
