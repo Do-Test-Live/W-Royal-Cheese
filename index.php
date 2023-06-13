@@ -320,6 +320,11 @@ include('include/header.php');
                             <h3 class="text-pacifico fw-normal text-content text-center">
                                 <?php echo $banner_middle[0]['details_cn']; ?>
                             </h3>
+                            <p class="banner_text">付款方法可用轉數快、Payme 或八達通<p>
+                               <p class="banner_text">收到轉賬後2-10天內發貨，<p>
+                               <p class="banner_text">請於付款後將入數資料whatsapp到52441954，<p>
+                                <p class="banner_text">買滿$600可享順豐智能櫃包郵，
+                                未滿$600則順豐到付</p>
                             <ul class="social-icon">
                                 <li>
                                     <a href="https://www.instagram.com/royal_cheese.ragdoll/?igshid=NTc4MTIwNjQ2YQ%3D%3D">

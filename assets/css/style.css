@@ -29797,6 +29797,9 @@ header .offcanvas-backdrop {
     .stickyCart {
         padding-bottom: 0
     }
+    .banner_text{
+        font-size: 13px;
+    }
 }
 
 .stickyCart .sticky-bottom-cart {
@@ -29833,5 +29836,9 @@ header .offcanvas-backdrop {
     line-height: normal;
 }
 
+.banner_text{
+    color: black !important;
+    margin-bottom: 8px !important;
+}
 
 /*# sourceMappingURL=style.css.map */
