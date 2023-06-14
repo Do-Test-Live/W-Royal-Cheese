@@ -61,7 +61,6 @@
                         if($_SESSION['language'] === 'CN'){
                             ?>
                             <div class="footer-logo-contain">
-                                <a href="javascript:void(0)">香港大圍成運路21-23號群力工業大廈3樓1室</a></br></br>
                                 <div class="footer-title">
                                     <h4>產品訂購</h4>
                                 </div>

@@ -327,69 +327,32 @@ if (isset($_SESSION["cart_item"])) {
                         <div class="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
                             <div class="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
                                 <div class="offcanvas-header navbar-shadow">
-                                    <h5>Menu</h5>
+                                    <h5>Category</h5>
                                     <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas"
                                             aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
                                     <?php
                                     if ($_SESSION['language'] === 'CN') {
+
                                         ?>
                                         <ul class="navbar-nav">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="Home">主頁</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="Shop">所有產品</i></a>
-                                            </li>
-                                        </ul>
-                                        <?php
-                                    } else {
-                                        ?>
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="Home">Home</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="Shop">All products</i></a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="About-Us-EN">About</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="Order-EN">How to order</a>
-                                            </li>
-
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-                                                   data-bs-toggle="dropdown">More <i class="fa-solid fa-angle-down"></i></a>
-
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a class="dropdown-item" href="Institution-EN">Institution/School
-                                                            Order</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="Living-Seeds-Children-EN">Royal Cheese
-                                                            Children Service Society</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="Course">Online Courses</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item"
-                                                           href="Textbook-Download-EN">Textbook Download</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item"
-                                                           href="Membership-Program-EN">Membership Program</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
+                                            <?php
+                                            $fetch_cat = $db_handle->runQuery("SELECT * FROM `category` where status = '1'");
+                                            $row = $db_handle->numRows("SELECT * FROM `category` where status = '1'");
+                                            for ($i = 0; $i < $row; $i++) {
+                                                ?>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="Shop?catId=<?php echo $fetch_cat[$i]['id'] ?>"><?php if ($_SESSION['language'] === 'CN') echo $fetch_cat[$i]['c_name']; else echo $fetch_cat[$i]['c_name_en']; ?></a>
+                                                </li>
+                                                <?php
+                                            }
+                                            ?>
                                         </ul>
                                         <?php
                                     }
-                                    ?>
+                                        ?>
+
 
                                 </div>
                             </div>
