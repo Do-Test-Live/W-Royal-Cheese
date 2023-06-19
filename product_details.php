@@ -207,8 +207,30 @@ include('include/header.php');
                                 <p><?php if ($_SESSION['language'] === 'CN') echo $product[0]['description']; else echo $product[0]['description_en']; ?>
                                 </p>
                             </div>
+                            <form method="post"
+                                  action="Product-Details?action=add&product_id=<?php echo $_GET['product_id']; ?>">
+                                <input type="text" value="" name="weight" id="updateweight">
+                                <input type="text" value="" name="price" id="updateprice">
+                                <div class="cart_qty qty-box product-qty">
+                                    <div class="input-group">
+                                        <button type="button" class="qty-left-minus" data-type="minus"
+                                                data-field="">
+                                            <i class="fa fa-minus" aria-hidden="true"></i>
+                                        </button>
+                                        <input class="form-control input-number qty-input" type="text"
+                                               name="quantity" min="1" value="1">
+                                        <button type="button" class="qty-right-plus" data-type="plus" data-field="">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                        </button>
 
+                                    </div>
+                                </div>
+                                <button class="btn btn-md bg-dark cart-button text-white w-100 mt-3"
+                                        type="submit"><?php if ($_SESSION['language'] === 'CN') echo '加入購物車'; else echo 'Add'; ?>
+                                </button>
+                            </form>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -480,7 +502,8 @@ include('include/footer.php');
 
 <script>
     function changePrice(value) {
-        document.getElementById('price').innerHTML = value+'.00';
+        document.getElementById('price').innerHTML = value + '.00';
+        document.getElementById('updateprice').value = value + '.00';
     }
 </script>
 

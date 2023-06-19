@@ -164,6 +164,16 @@ if (isset($_SESSION["cart_item"])) {
                                         </div>
                                     </a>
                                 </li>
+                                <li class="right-side">
+                                    <div class="onhover-dropdown header-badge">
+                                        <a href="Cart" class="btn p-0 position-relative header-wishlist">
+                                            <i data-feather="shopping-cart"></i>
+                                            <span class="position-absolute top-0 start-100 translate-middle badge"><?php echo $total_quantity; ?>
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                        </a>
+                                    </div>
+                                </li>
                                 <li class="right-side onhover-dropdown">
                                     <div class="delivery-login-box">
                                         <div class="delivery-icon">
