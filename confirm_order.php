@@ -55,18 +55,18 @@ if (isset($_POST["placeOrder"])) {
     // Prepare table HTML
     $tableHtml = '<table style="border-collapse: collapse; width: 100%;">';
     $tableHtml .= '<tr>
-                    <th style="border: 1px solid #000; padding: 8px;">Product Name</th>
-                    <th style="border: 1px solid #000; padding: 8px;">Product Quantity</th>
-                    <th style="border: 1px solid #000; padding: 8px;">Unit Price</th>
-                    <th style="border: 1px solid #000; padding: 8px;">Total Price</th>
+                    <th style="border: 1px solid #000; padding: 8px; text-align: center;">Product Name</th>
+                    <th style="border: 1px solid #000; padding: 8px; text-align: center;">Product Quantity</th>
+                    <th style="border: 1px solid #000; padding: 8px; text-align: center;">Unit Price</th>
+                    <th style="border: 1px solid #000; padding: 8px; text-align: center;">Total Price</th>
                 </tr>';
 
         for($i = 0; $i < $no_product_details; $i++) {
             $tableHtml .= '<tr>';
-            $tableHtml .= '<td style="border: 1px solid #000; padding: 8px;">' . $product_details[$i]['product_name'] . '</td>';
-            $tableHtml .= '<td style="border: 1px solid #000; padding: 8px;">' . $product_details[$i]['product_quantity'] . '</td>';
-            $tableHtml .= '<td style="border: 1px solid #000; padding: 8px;">' . $product_details[$i]['product_unit_price'] . '</td>';
-            $tableHtml .= '<td style="border: 1px solid #000; padding: 8px;">' . $product_details[$i]['product_total_price'] . '</td>';
+            $tableHtml .= '<td style="border: 1px solid #000; padding: 8px; text-align: center;">' . $product_details[$i]['product_name'] . '</td>';
+            $tableHtml .= '<td style="border: 1px solid #000; padding: 8px; text-align: center;">' . $product_details[$i]['product_quantity'] . '</td>';
+            $tableHtml .= '<td style="border: 1px solid #000; padding: 8px; text-align: center;">' . $product_details[$i]['product_unit_price'] . '</td>';
+            $tableHtml .= '<td style="border: 1px solid #000; padding: 8px; text-align: center;">' . $product_details[$i]['product_total_price'] . '</td>';
             $tableHtml .= '</tr>';
         }
 
