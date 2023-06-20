@@ -142,45 +142,8 @@ include('include/header.php');
                         <div class="right-box-contain">
                             <h2 class="name"><?php if ($_SESSION['language'] === 'CN') echo $product[0]['p_name']; else echo $product[0]['p_name_en']; ?></h2>
 
-                            <div class="d-flex mb-3">
-                                <?php
-                                $prduct_price = $product[0]['product_price'];
-                                $product_weight = $product[0]['product_weight'];
-                                $i = 0;
-                                $variableAry = explode(",", $prduct_price);
-                                $variableWeight = explode(",", $product_weight);
-                                foreach ($variableAry as $var) {
-                                    echo "<button type='button' style='border:1px solid black' onclick='changePrice(" . $var . ");' class='btn btn-light me-2'>" . $variableWeight[$i] . "g</button>";
-                                    $i++;
-                                }
-                                ?>
-                            </div>
-
                             <div class="price-rating">
-                                <h3 class="theme-color price">
-                                    HK$<b id="price"><?php echo $variableAry[0]; ?></b>
-                                    <!--<span
-                                            class="offer theme-color">(8% off)</span>-->
-                                </h3>
                                 <div class="product-rating custom-rate">
-                                    <!--<ul class="rating">
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star"></i>
-                                        </li>
-                                    </ul>-->
-                                    <!--<span class="review">23 Customer Review</span>-->
                                     <?php
                                     $quantity = 0;
                                     $fetch_quantity_no = $db_handle->numRows("select quantity from stock where product_id = '$product_id'");
@@ -207,10 +170,34 @@ include('include/header.php');
                                 <p><?php if ($_SESSION['language'] === 'CN') echo $product[0]['description']; else echo $product[0]['description_en']; ?>
                                 </p>
                             </div>
+                            <div class="d-flex mb-3 mt-3">
+                                <?php
+                                $prduct_price = $product[0]['product_price'];
+                                $product_weight = $product[0]['product_weight'];
+                                $i = 0;
+                                $variableAry = explode(",", $prduct_price);
+                                $variableWeight = explode(",", $product_weight);
+                                foreach ($variableAry as $var) {
+                                    echo "<button type='button' style='border:1px solid black' onclick='changePrice(" . $var . ", " . $variableWeight[$i] .");' class='btn btn-light me-2'>" . $variableWeight[$i] . "g</button>";
+                                    $i++;
+                                }
+                                ?>
+                            </br>
+                                <h3 class="theme-color price">
+                                    HK$<b id="price"><?php echo $variableAry[0]; ?></b>
+                                </h3>
+                            </div>
                             <form method="post"
                                   action="Product-Details?action=add&product_id=<?php echo $_GET['product_id']; ?>">
-                                <input type="text" value="" name="weight" id="updateweight">
-                                <input type="text" value="" name="price" id="updateprice">
+                                <p>Please Select a weight from above to place your order</p>
+                                <label class="form-check-label ms-2 mt-3" for="updateweight">Selected Weight</label>
+
+                                <input type="text" class="form-control" value="" name="weight" id="updateweight" required>
+
+                                <label class="form-check-label ms-2 mt-3" for="updateprice">Price</label>
+
+                                <input type="text" class="form-control" value="" name="price" id="updateprice" required>
+
                                 <div class="cart_qty qty-box product-qty">
                                     <div class="input-group">
                                         <button type="button" class="qty-left-minus" data-type="minus"
@@ -501,9 +488,10 @@ include('include/footer.php');
 <script src="assets/js/script.js"></script>
 
 <script>
-    function changePrice(value) {
+    function changePrice(value, weight) {
         document.getElementById('price').innerHTML = value + '.00';
         document.getElementById('updateprice').value = value + '.00';
+        document.getElementById('updateweight').value = weight;
     }
 </script>
 

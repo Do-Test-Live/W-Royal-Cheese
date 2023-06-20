@@ -63,3 +63,5 @@ RewriteRule ^Search-Result search_result.php [NE,L]
 RewriteRule ^Customer-Review customer_review.php [NE,L]
 
 RewriteRule ^Reset-Password reset_pass.php [NE,L]
+
+RewriteRule ^Confirm-Order confirm_order.php [NE,L]
