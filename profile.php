@@ -99,7 +99,7 @@ include('include/header.php');
 <section class="log-in-section background-image-2 section-b-space">
     <div class="container-fluid-lg w-100">
         <div class="row">
-            <div class="col-xxl-6 col-xl-5 col-lg-6 d-lg-block d-none ms-auto">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 d-lg-block d-none ms-auto">
                 <div class="row">
                     <div class="col-12">
                         <div class="table-responsive">
@@ -107,11 +107,7 @@ include('include/header.php');
                                 <thead>
                                 <tr>
                                     <th>SL No</th>
-                                    <th>Invoice Number</th>
-                                    <th>Payment Type</th>
-                                    <th>Shipping Method</th>
                                     <th>Price</th>
-                                    <th>Print Invoice</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -122,11 +118,7 @@ include('include/header.php');
                                     ?>
                                     <tr>
                                         <td><?php echo $i+1;?></td>
-                                        <td>#WHK<?php echo $fetch_data[$i]['id'];?></td>
-                                        <td><?php echo $fetch_data[$i]['payment_type'];?></td>
-                                        <td><?php echo $fetch_data[$i]['shipping_method'];?></td>
                                         <td><?php echo $fetch_data[$i]['total_purchase'];?></td>
-                                        <td><a href="admin/print_invoice.php?id=<?php echo $fetch_data[$i]['id'];?>" target="_blank"><i class="fa fa-print"></i></a></td>
                                     </tr>
                                     <?php
                                 }
@@ -135,77 +127,6 @@ include('include/header.php');
                             </table>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="col-xxl-4 col-xl-5 col-lg-6 col-sm-8 mx-auto">
-                <div class="log-in-box">
-                    <div class="log-in-title">
-                        <h3>Membership Points:</h3>
-                        <h3 class="text-warning">
-                            <?php
-                            $points = $db_handle->runQuery("select sum(purchase_points) as points from billing_details where customer_id = '$customer_id'");
-                            echo $points[0]['points'];
-                            ?>
-                         Points</h3>
-                    </div>
-                    <div class="log-in-title">
-                        <h3>Previous Comment</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="table-responsive">
-                                <table class="table order-tab-table">
-                                    <thead>
-                                    <tr>
-                                        <th>SL No</th>
-                                        <th>Comment</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php
-                                    $comment = $db_handle->runQuery("select * from review where customer_id = '$customer_id'");
-                                    $no_comment = $db_handle->numRows("select * from review where customer_id = '$customer_id'");
-                                    for($i=0; $i<$no_comment;$i++){
-                                        ?>
-                                        <tr>
-                                            <td><?php echo $i+1;?></td>
-                                            <td><?php echo $comment[$i]['description'];?></td>
-                                        </tr>
-                                        <?php
-                                    }
-                                    ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="log-in-title mt-5">
-                        <h3>Welcome To Royal Cheese</h3>
-                        <h4>Submit your Comment.</h4>
-                    </div>
-
-                    <div class="input-box">
-                        <form class="row g-4" action="#" method="post">
-                            <div class="col-12">
-                                <div class="form-floating theme-form-floating log-in-form">
-                                    <textarea class="form-control" rows="4" name="review"></textarea>
-                                    <label for="email">Comment</label>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <button class="btn btn-animation w-100 justify-content-center" name="submit"
-                                        type="submit">Submit
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="other-log-in">
-                        <h6></h6>
-                    </div>
-
                 </div>
             </div>
         </div>

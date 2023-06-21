@@ -132,25 +132,19 @@ include('include/header.php');
                                                                 <input type="text" class="form-control" name="address"
                                                                        value="" placeholder="<?php if($_SESSION['language'] === 'CN') echo '街道地址'; else echo 'Street Address';?>" required="">
                                                             </div>
-                                                            <div class="form-group col-md-6 mb-3">
+                                                            <div class="form-group col-md-12 mb-3">
                                                                 <input type="text" class="form-control" name="city" value=""
                                                                        placeholder="<?php if($_SESSION['language'] === 'CN') echo '城市'; else echo 'City';?>" required="">
                                                             </div>
-                                                            <div class="form-group col-md-6 mb-3">
-                                                                <input type="text" class="form-control" name="zip_code"
+                                                                <input type="hidden" class="form-control" name="zip_code"
                                                                        value="" placeholder="<?php if($_SESSION['language'] === 'CN') echo '郵政編碼'; else echo 'Zip Code';?>"
                                                                        required="">
-                                                            </div>
                                                             <div class="form-group col-md-12 mb-3">
                                                                 <input type="text" class="form-control" name="note"
-                                                                       value="" placeholder="<?php if($_SESSION['language'] === 'CN') echo '筆記'; else echo 'Note';?>">
+                                                                       value="" placeholder="<?php if($_SESSION['language'] === 'CN') echo '備註:'; else echo 'Note';?>">
                                                             </div>
-                                                            <div class="form-group col-md-6 mb-3">
-                                                                <input class="form-check-input card-class" name="addInfo" type="checkbox"
-                                                                       value="" id="flexCheckChecked">
-                                                                <label class="form-check-label ms-2" for="flexCheckChecked">
-                                                                    <?php if($_SESSION['language'] === 'CN') echo '將此數據添加到客戶信息'; else echo 'Add this data to customer info';?>
-                                                                </label>
+                                                                <input class="form-check-input card-class" name="addInfo" type="hidden"
+                                                                       value="0" id="flexCheckChecked">
 
                                                                 <?php
                                                                 if(isset($_GET['discount'])){
@@ -159,7 +153,6 @@ include('include/header.php');
                                                                     <?php
                                                                 }
                                                                 ?>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

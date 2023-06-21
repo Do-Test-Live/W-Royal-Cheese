@@ -226,7 +226,7 @@ if (isset($_SESSION["cart_item"])) {
                                                 <ul class="user-box-name">
                                                     <li class="product-box-contain">
                                                         <i></i>
-                                                        <a href="profile.php">輪廓</a>
+                                                        <a href="profile.php">個人資料</a>
                                                     </li>
                                                     <li class="product-box-contain">
                                                         <i></i>

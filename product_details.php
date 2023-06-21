@@ -183,18 +183,20 @@ include('include/header.php');
                                 }
                                 ?>
                             </br>
+                            </div>
+                            <div class="row mb-4">
                                 <h3 class="theme-color price">
                                     HK$<b id="price"><?php echo $variableAry[0]; ?></b>
                                 </h3>
                             </div>
                             <form method="post"
                                   action="Product-Details?action=add&product_id=<?php echo $_GET['product_id']; ?>">
-                                <p>Please Select a weight from above to place your order</p>
-                                <label class="form-check-label ms-2 mt-3" for="updateweight">Selected Weight</label>
+                                <p>請從上述選擇中選擇一個重量來下單</p>
+                                <label class="form-check-label mt-3" for="updateweight">已選擇的重量</label>
 
                                 <input type="text" class="form-control" value="" name="weight" id="updateweight" required>
 
-                                <label class="form-check-label ms-2 mt-3" for="updateprice">Price</label>
+                                <label class="form-check-label mt-3" for="updateprice">價格</label>
 
                                 <input type="text" class="form-control" value="" name="price" id="updateprice" required>
 
