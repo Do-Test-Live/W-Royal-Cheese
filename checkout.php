@@ -125,8 +125,8 @@ include('include/header.php');
                                                             </div>
                                                             <div class="form-group col-md-12 mb-3">
                                                                 <input type="text" class="form-control" name="phone_number"
-                                                                       value="" placeholder="<?php if($_SESSION['language'] === 'CN') echo '電話號碼'; else echo 'Phone Number';?>"
-                                                                       required="">
+                                                                       value="" placeholder="<?php if($_SESSION['language'] === 'CN') echo '電話號碼'; else echo 'Phone Number';?>" maxlength="10"
+                                                                       minlength="10" required="">
                                                             </div>
                                                             <div class="form-group col-md-12 mb-3">
                                                                 <input type="text" class="form-control" name="address"

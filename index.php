@@ -472,8 +472,8 @@ include('include/header.php');
                                             <span>(34)</span>
                                         </div>-->
                                         <h6>
-                                            HK$<?php echo substr($fetch_product [$i]['product_price'], 0, strpos($fetch_product [$i]['product_price'], ',')) ?>/
-                                            <?php echo substr($fetch_product [$i]['product_weight'], 0, strpos($fetch_product [$i]['product_weight'], ',')) ?>g
+                                            HK$<?php echo substr($product [$i]['product_price'], 0, strpos($product [$i]['product_price'], ',')) ?>/
+                                            <?php echo substr($product [$i]['product_weight'], 0, strpos($product [$i]['product_weight'], ',')) ?>g
 
                                         </h6>
                                     </div>
@@ -538,8 +538,8 @@ include('include/header.php');
                                             <span>(34)</span>
                                         </div>-->
                                         <h6>
-                                            HK$<?php echo substr($fetch_product [$i]['product_price'], 0, strpos($fetch_product [$i]['product_price'], ',')) ?>/
-                                            <?php echo substr($fetch_product [$i]['product_weight'], 0, strpos($fetch_product [$i]['product_weight'], ',')) ?>g
+                                            HK$<?php echo substr($fetch_product3 [$i]['product_price'], 0, strpos($fetch_product3 [$i]['product_price'], ',')) ?>/
+                                            <?php echo substr($fetch_product3 [$i]['product_weight'], 0, strpos($fetch_product3 [$i]['product_weight'], ',')) ?>g
                                         </h6>
                                     </div>
                                 </div>
